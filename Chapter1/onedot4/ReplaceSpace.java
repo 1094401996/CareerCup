@@ -2,24 +2,26 @@ package onedot4;
 
 public class ReplaceSpace {
 	public static void main(String[] args){
-		String s = "Hello Chen Geng                 ";
-		
-		char[]str = s.toCharArray();
-		int length = 15;
-		start(str,length);
+		StringBuffer s = new StringBuffer("Hello Chen Geng");
+		int originlen = s.length();
+		int spacenum = 0;
+		for(int i = 0; i < originlen;i++){
+		    if(s.charAt(i) == ' ')
+		        spacenum++;;
+		}
+		for (int j = 0; j < spacenum; j++){
+		    s.append(' ');
+		    s.append(' ');
+		}
+		int newlen = s.length();
+		char[]str = s.toString().toCharArray();
+		start(str,originlen,newlen);
 	    System.out.println(new String(str));
 	}
-	public static void start(char[]str,int length){
-		int spacenumber = 0;
-		for(int i = 0; i < length; i++){
-			if(str[i] == ' ')
-				spacenumber++;
-		}
+	public static void start(char[]str,int originlen,int newlen){
 		
-		int newlength = length + 2 * spacenumber;
-		int k = newlength - 1;
-		str[newlength] = '\0';
-		for(int j = length - 1; j >=0; j--){
+		int k = newlen - 1;
+		for(int j = originlen - 1; j >=0; j--){
 			if (str[j] == ' '){
 				str[k] = '%';
 				str[--k] = '0';
@@ -33,5 +35,4 @@ public class ReplaceSpace {
 		}
 		
 	}
-
 }
