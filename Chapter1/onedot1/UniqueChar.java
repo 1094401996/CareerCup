@@ -20,7 +20,7 @@ public class UniqueChar {
     public static boolean isUniqueChar1(String str){
         boolean [] set= new boolean[256];
         for (int i=0; i < 256; i++)
-            set = false;
+            set[i] = false;
         int len=str.length();
         for (int j =0; j < len; j++){
             int val =str.charAt(j);
@@ -31,7 +31,7 @@ public class UniqueChar {
         }
         return true;
     }
-//hashtable
+//hash table
     public static boolean isUniqueChar2(String str){
         Map<Integer,Character> charMap =new HashMap<Integer,Character>();
         for (int i=0; i < str.length(); i++){
@@ -50,7 +50,7 @@ public class UniqueChar {
         char [] data = str.toCharArray();
         quicksort(data,0,data.length-1);
         for (int i = 1; i < data.length;i++){
-            if (data == data)
+            if (data[i] == data[i - 1])
                 return false;
         }
         return true;
@@ -70,13 +70,13 @@ public class UniqueChar {
             if (data[j] <= pivot){
             i++;
             temp = data [j];
-            data[j]=data;
-            data=temp;
+            data[j]=data[ i];
+            data[i]=temp;
             }
         }
         temp=data[right];
-        data[right] = data;
-        data = temp;
+        data[right] = data[i+1];
+        data[i+1] = temp;
         return i+1;
         }
     }
