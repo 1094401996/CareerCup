@@ -1,0 +1,39 @@
+package onedot5;
+
+public class Decoder {
+	public static void main(String [] args) throws Exception{
+	     String s = "a12c9";
+	     System.out.println(decode(s));
+	     
+	}
+	public  static String decode(String str) throws Exception{
+        if (str == null)
+        	throw new Exception("empty string");
+		StringBuffer buf = new StringBuffer();
+		char flag = str.charAt(0);
+		int i = 1;
+		while (i < str.length() - 1){
+			int begin = i ;
+			while(isNumber(str.charAt(i)) && (i < str.length())){
+				 i++;
+			}
+			int count = Integer.parseInt(str.substring(begin, i));
+			System.out.println(count);
+			for (int k = 0; k < count; k++){
+				buf.append(flag);
+			}
+			if(i < str.length()){
+				flag = str.charAt(i);
+			}
+			
+		 }
+			return buf.toString();
+			
+	}
+		
+	private static boolean isNumber(char c){
+		return c <='9' && c >= '0';
+	}
+    
+
+}

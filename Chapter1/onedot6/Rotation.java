@@ -5,9 +5,12 @@ public class Rotation {
 		int[][]matrix ={{1,2,3},{4,5,6},{7,8,9}};
 		Rotation r = new Rotation();
 		r.rotate(matrix, 3);
-		for(int i = 0; i< 3;i++)
-			for(int j = 0;j < 3; j++)
-				System.out.println(matrix[i][j]);
+		for(int i = 0; i< 3;i++){
+			for(int j = 0;j < 3; j++){
+				System.out.print(matrix[i][j] + " ");
+			}
+			System.out.println();
+		}
 	}
 	public void rotate(int[][]matrix,int n){
 		for(int layer = 0; layer <n/2; ++layer){
