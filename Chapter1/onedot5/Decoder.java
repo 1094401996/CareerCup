@@ -2,7 +2,7 @@ package onedot5;
 
 public class Decoder {
 	public static void main(String [] args) throws Exception{
-	     String s = "a1b2c8";
+	     String s = "a1b2c18";
 	     System.out.println(decode(s));
 	     
 	}
@@ -11,9 +11,9 @@ public class Decoder {
         	throw new Exception("empty string");
 		StringBuffer buf = new StringBuffer();
 		char flag = str.charAt(0);
-		int i = 0;
-		while (i < str.length() - 1){
-			int begin = ++i   ;
+		int i = 1;
+		while (i < str.length()){
+			int begin = i   ;
 			while(  (i < str.length())  && isNumber(str.charAt(i)) ){
 				 i++;
 			}
@@ -23,6 +23,7 @@ public class Decoder {
 			}
 			if(i < str.length()){
 				flag = str.charAt(i);
+				i++;
 			}
 			
 		 }
