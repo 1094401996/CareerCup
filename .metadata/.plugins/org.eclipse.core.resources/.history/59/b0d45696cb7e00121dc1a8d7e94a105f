@@ -1,9 +1,5 @@
 package onedot7;
-/**
- * 2013.02.23 
- * 开两个位向量数组，一个记录行，一个记录列
- * 零少的时候使用set1,多的时候使用set2
- * */
+
 import java.util.ArrayList;
 
 public class SetZero {
