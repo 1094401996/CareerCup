@@ -8,36 +8,52 @@ public class SetZero {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		ArrayList<Integer> arr = new ArrayList<Integer>();
-		int[][]matrix ={{0,1,2,3},{4,0,5,6},{7,8,0,0}};
+		int[][]matrix ={{0,0,2,3},{4,1,5,6},{7,8,1,1}};
 		int N = matrix.length;
 		int M = matrix[0].length;
+		boolean[]rowEmpty = new boolean[N];
+		boolean[]columnEmtpy = new boolean[M];
 		for(int i = 0; i < N; i++)
 			for (int j = 0; j < M; j++){
-				if(arr.contains(j)){
-					continue;
-				}
 				if(matrix[i][j] == 0){
-					arr.add(j);
-					set(matrix,i,j);
-					break;
+					rowEmpty[i] = true;
+					columnEmtpy[j] = true;
 				}
 			}	
-		for(int p = 0; p < N;p++)
+		set1(matrix,rowEmpty,columnEmtpy);
+		for(int p = 0; p < N;p++){
 			for(int q = 0; q < M; q++){
-				System.out.println(matrix[p][q]);
+				System.out.print(matrix[p][q] + " ");
 			}
+			System.out.println();
+		}
+		
 	}
-
-	public static void set(int matrix[][], int i, int j){
-		int N = matrix.length;
-		int M = matrix[0].length;
-		for(int k = 0; k < M; k++){
-			matrix[i][k] = 0;
+    public static void set1(int matrix[][], boolean[] rowEmpty, boolean [] columnEmpty){
+    	for(int i = 0 ; i < rowEmpty.length; i++){
+    		if(rowEmpty[i] == true){
+    			for(int j = 0; j < matrix[0].length;j++){
+    				matrix[i][j] = 0;
+    			}
+    		}
+    	}
+    	for(int i = 0; i < columnEmpty.length;i++){
+    		if(columnEmpty[i] == true){
+    			for (int j = 0; j < matrix.length; j++){
+    				matrix[j][i] = 0;
+    			}
+    		}
+    	}
+    }
+	public static void set2(int matrix[][], boolean[] rowEmpty, boolean [] columnEmpty){
+		for (int i = 0; i < matrix.length; i++){
+			for (int j = 0; j < matrix[0].length; j++){
+				if (rowEmpty[i] || columnEmpty[j]){
+					matrix[i][j] = 0;
+				}
+			}
 		}
-		for (int p = 0 ; p < N ; p++){
-			matrix[p][j] = 0;
-		}
+		
 	}
 
 }
