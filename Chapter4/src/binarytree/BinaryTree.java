@@ -1,15 +1,29 @@
 package binarytree;
-// just the answer of the book 
 public class BinaryTree {
 	private Node root;
 	
-	
-	public BinaryTree(){
-		
-	}
+
 	public BinaryTree(int[]arr){
 		initTree(arr);
 	}
+	public BinaryTree(int[]arr,boolean a){
+		root = buildMinBST(arr);
+	}
+	private Node buildMinBST(int[]arr){
+		return  creatMinBST(arr,0 , arr.length - 1);
+	}
+	private Node creatMinBST(int[]arr,int left, int right){
+			if(left > right){
+				return null;
+			}
+			int mid = (left + right)/2;
+			Node n = new Node(arr[mid]);
+			n.setLeft(creatMinBST(arr,left,mid - 1));
+			n.setRight(creatMinBST(arr,mid + 1,right));
+			return n;
+		
+	}
+	
 	/**
 	 * 初始化二叉树
 	 */
@@ -43,6 +57,7 @@ public class BinaryTree {
     		}
     	}
     }
+
     
     public Node findNode(int element){
     	Node p = root;
@@ -77,7 +92,7 @@ public class BinaryTree {
     		System.out.print(p.getElement() + " ");
     		inorder(p.getRight());
     	}
- 
+    
     public void postorder(Node p ){
     	 if (p == null)
   		   return ;

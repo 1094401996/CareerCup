@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="17" version="2.0">
+<workbench progressCount="39" version="2.0">
 <workbenchAdvisor/>
-<window height="744" maximized="true" width="1020" x="191" y="24">
+<window height="744" width="1016" x="191" y="24">
 <fastViewData fastViewLocation="1024"/>
 <intro standby="true"/>
 <perspectiveBar>
@@ -18,8 +18,8 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="184" y="30"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.python.pydev.editor.PythonEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.python.pydev.editor.PythonEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -34,9 +34,9 @@
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.python.pydev.editor.PythonEditor" name="MyQueue.py" partName="MyQueue" path="/home/gengchen/Desktop/github/CareerCup/Chapter3/threedot5/MyQueue.py" title="MyQueue" tooltip="Chapter3/threedot5/MyQueue.py" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter3/threedot5/MyQueue.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="631" selectionTopPixel="119"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Rotation.java" partName="Rotation.java" path="/home/gengchen/Desktop/github/CareerCup/Chapter1/onedot6/Rotation.java" title="Rotation.java" tooltip="Chapter1/onedot6/Rotation.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter1/onedot6/Rotation.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="237" selectionOffset="18" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -45,6 +45,11 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>
+<category IMemento.internal.id="Warnings (3 items)"/>
+<category IMemento.internal.id="Errors"/>
+<category IMemento.internal.id="Warnings"/>
+</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="232" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -109,7 +114,7 @@
 </view>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 </views>
-<perspectives activePart="org.python.pydev.editor.PythonEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.ui.internal.ide.application.ResourcePerspective" id="org.eclipse.ui.resourcePerspective" label="Resource"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -144,45 +149,31 @@
 <view id="org.eclipse.ui.views.TaskList"/>
 <view id="org.eclipse.ui.internal.introview"/>
 <fastViewBars/>
-<layout>
-<mainWindow>
-<info folder="true" part="topLeft">
-<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">
-<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="topLeft">&#x0A;<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.team.ccvs.ui.RepositoriesView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@1332b63" ratio="0.7495049" ratioLeft="757" ratioRight="253" relationship="2" relative="topLeft">
-<folder activePageID="org.eclipse.ui.internal.introview" appearance="2" expanded="1">
-<page content="org.eclipse.ui.internal.introview" label="Welcome"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1332b63" ratio="0.7495049" ratioLeft="757" ratioRight="253" relationship="2" relative="topLeft">&#x0A;<folder activePageID="org.eclipse.ui.internal.introview" appearance="2" expanded="1">&#x0A;<page content="org.eclipse.ui.internal.introview" label="Welcome"/>
 <page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.25940594" ratioLeft="262" ratioRight="748" relationship="2" relative="topLeft"/>
-<info folder="true" part="bottomRight" ratio="0.6596434" ratioLeft="407" ratioRight="210" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.TaskList" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<info folder="true" part="bottomRight" ratio="0.6596434" ratioLeft="407" ratioRight="210" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.TaskList" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.team.ui.GenericHistoryView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="bottomLeft" ratio="0.49918962" ratioLeft="308" ratioRight="309" relationship="4" relative="topLeft">
-<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<info folder="true" part="bottomLeft" ratio="0.49918962" ratioLeft="308" ratioRight="309" relationship="4" relative="topLeft">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
@@ -306,96 +297,8 @@
 <navigationHistory>
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Chapter3/threedot5/MyQueue.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter4/src/binarytree/BinaryTree.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter4/src/fourdot1/IsBalanced.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter1/onedot6/Rotation.java"/>
 </editors>
-<item historyLabel="MyQueue" index="0">
-<position info="not_deleted" x="412" y="0"/>
-</item>
-<item historyLabel="BinaryTree.java" index="1">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="BinaryTree.java" index="1">
-<position info="not_deleted" x="2862" y="0"/>
-</item>
-<item historyLabel="BinaryTree.java" index="1">
-<position info="not_deleted" x="1800" y="0"/>
-</item>
-<item historyLabel="BinaryTree.java" index="1">
-<position info="not_deleted" x="1862" y="0"/>
-</item>
-<item historyLabel="BinaryTree.java" index="1">
-<position info="not_deleted" x="1891" y="0"/>
-</item>
-<item historyLabel="BinaryTree.java" index="1">
-<position info="not_deleted" x="1897" y="0"/>
-</item>
-<item historyLabel="BinaryTree.java" index="1">
-<position info="not_deleted" x="1891" y="0"/>
-</item>
-<item historyLabel="BinaryTree.java" index="1">
-<position info="not_deleted" x="2857" y="0"/>
-</item>
-<item historyLabel="BinaryTree.java" index="1">
-<position info="not_deleted" x="2224" y="0"/>
-</item>
-<item historyLabel="BinaryTree.java" index="1">
-<position info="not_deleted" x="2049" y="0"/>
-</item>
-<item historyLabel="BinaryTree.java" index="1">
-<position info="not_deleted" x="2221" y="0"/>
-</item>
-<item historyLabel="BinaryTree.java" index="1">
-<position info="not_deleted" x="2214" y="0"/>
-</item>
-<item historyLabel="BinaryTree.java" index="1">
-<position info="not_deleted" x="2211" y="0"/>
-</item>
-<item historyLabel="BinaryTree.java" index="1">
-<position/>
-</item>
-<item historyLabel="BinaryTree.java" index="1">
-<position/>
-</item>
-<item historyLabel="BinaryTree.java" index="1">
-<position info="not_deleted" x="2857" y="0"/>
-</item>
-<item historyLabel="BinaryTree.java" index="1">
-<position info="not_deleted" x="2296" y="0"/>
-</item>
-<item historyLabel="BinaryTree.java" index="1">
-<position info="not_deleted" x="2722" y="0"/>
-</item>
-<item historyLabel="BinaryTree.java" index="1">
-<position info="not_deleted" x="2501" y="0"/>
-</item>
-<item historyLabel="BinaryTree.java" index="1">
-<position info="not_deleted" x="2857" y="0"/>
-</item>
-<item historyLabel="BinaryTree.java" index="1">
-<position info="not_deleted" x="2804" y="0"/>
-</item>
-<item historyLabel="BinaryTree.java" index="1">
-<position info="not_deleted" x="51" y="0"/>
-</item>
-<item historyLabel="IsBalanced.java" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="IsBalanced.java" index="2">
-<position/>
-</item>
-<item historyLabel="IsBalanced.java" index="2">
-<position/>
-</item>
-<item historyLabel="BinaryTree.java" index="1">
-<position info="not_deleted" x="2872" y="0"/>
-</item>
-<item historyLabel="IsBalanced.java" index="2">
-<position info="not_deleted" x="551" y="0"/>
-</item>
-<item historyLabel="MyQueue" index="0">
-<position info="not_deleted" x="412" y="0"/>
-</item>
 <item historyLabel="MyQueue" index="0">
 <position info="not_deleted" x="877" y="8"/>
 </item>
@@ -405,8 +308,146 @@
 <item historyLabel="MyQueue" index="0">
 <position info="not_deleted" x="429" y="0"/>
 </item>
-<item active="true" historyLabel="MyQueue" index="0">
-<position info="not_deleted" x="406" y="0"/>
+<item historyLabel="MyQueue" index="0">
+<position info="not_deleted" x="631" y="0"/>
+</item>
+<item historyLabel="Rotation.java" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Rotation.java" index="1">
+<position info="not_deleted" x="554" y="0"/>
+</item>
+<item historyLabel="Rotation.java" index="1">
+<position info="not_deleted" x="1074" y="0"/>
+</item>
+<item historyLabel="Rotation.java" index="1">
+<position info="not_deleted" x="1358" y="0"/>
+</item>
+<item historyLabel="Rotation.java" index="1">
+<position/>
+</item>
+<item historyLabel="Rotation.java" index="1">
+<position info="not_deleted" x="625" y="0"/>
+</item>
+<item historyLabel="Rotation.java" index="1">
+<position/>
+</item>
+<item historyLabel="Rotation.java" index="1">
+<position/>
+</item>
+<item historyLabel="Rotation.java" index="1">
+<position/>
+</item>
+<item historyLabel="Rotation.java" index="1">
+<position/>
+</item>
+<item historyLabel="Rotation.java" index="1">
+<position/>
+</item>
+<item historyLabel="Rotation.java" index="1">
+<position/>
+</item>
+<item historyLabel="Rotation.java" index="1">
+<position/>
+</item>
+<item historyLabel="Rotation.java" index="1">
+<position/>
+</item>
+<item historyLabel="Rotation.java" index="1">
+<position/>
+</item>
+<item historyLabel="Rotation.java" index="1">
+<position/>
+</item>
+<item historyLabel="Rotation.java" index="1">
+<position info="not_deleted" x="1404" y="0"/>
+</item>
+<item historyLabel="Rotation.java" index="1">
+<position info="not_deleted" x="1968" y="0"/>
+</item>
+<item historyLabel="Rotation.java" index="1">
+<position info="not_deleted" x="1963" y="0"/>
+</item>
+<item historyLabel="Rotation.java" index="1">
+<position info="not_deleted" x="1638" y="0"/>
+</item>
+<item historyLabel="Rotation.java" index="1">
+<position info="not_deleted" x="1641" y="0"/>
+</item>
+<item historyLabel="Rotation.java" index="1">
+<position/>
+</item>
+<item historyLabel="Rotation.java" index="1">
+<position/>
+</item>
+<item historyLabel="Rotation.java" index="1">
+<position/>
+</item>
+<item historyLabel="Rotation.java" index="1">
+<position info="not_deleted" x="1188" y="0"/>
+</item>
+<item historyLabel="Rotation.java" index="1">
+<position info="not_deleted" x="1951" y="0"/>
+</item>
+<item historyLabel="Rotation.java" index="1">
+<position info="not_deleted" x="1784" y="0"/>
+</item>
+<item historyLabel="Rotation.java" index="1">
+<position info="not_deleted" x="1799" y="0"/>
+</item>
+<item historyLabel="Rotation.java" index="1">
+<position info="not_deleted" x="1814" y="0"/>
+</item>
+<item historyLabel="Rotation.java" index="1">
+<position info="not_deleted" x="1862" y="0"/>
+</item>
+<item historyLabel="Rotation.java" index="1">
+<position info="not_deleted" x="1877" y="0"/>
+</item>
+<item historyLabel="Rotation.java" index="1">
+<position info="not_deleted" x="1951" y="0"/>
+</item>
+<item historyLabel="Rotation.java" index="1">
+<position info="not_deleted" x="1114" y="0"/>
+</item>
+<item historyLabel="Rotation.java" index="1">
+<position info="not_deleted" x="1117" y="0"/>
+</item>
+<item historyLabel="Rotation.java" index="1">
+<position info="not_deleted" x="1129" y="0"/>
+</item>
+<item historyLabel="Rotation.java" index="1">
+<position info="not_deleted" x="1135" y="0"/>
+</item>
+<item historyLabel="Rotation.java" index="1">
+<position info="not_deleted" x="1358" y="0"/>
+</item>
+<item historyLabel="Rotation.java" index="1">
+<position info="not_deleted" x="1180" y="0"/>
+</item>
+<item historyLabel="Rotation.java" index="1">
+<position info="not_deleted" x="1195" y="0"/>
+</item>
+<item historyLabel="Rotation.java" index="1">
+<position info="not_deleted" x="1210" y="0"/>
+</item>
+<item historyLabel="Rotation.java" index="1">
+<position info="not_deleted" x="1250" y="0"/>
+</item>
+<item historyLabel="Rotation.java" index="1">
+<position info="not_deleted" x="1265" y="0"/>
+</item>
+<item historyLabel="Rotation.java" index="1">
+<position info="not_deleted" x="1289" y="0"/>
+</item>
+<item historyLabel="Rotation.java" index="1">
+<position info="not_deleted" x="1296" y="0"/>
+</item>
+<item historyLabel="Rotation.java" index="1">
+<position info="not_deleted" x="1343" y="0"/>
+</item>
+<item active="true" historyLabel="Rotation.java" index="1">
+<position info="not_deleted" x="1350" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -414,9 +455,6 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="left"/>
-</trimArea>
 <trimArea IMemento.internal.id="131072">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@1bad2e8"/>
 </trimArea>
@@ -427,11 +465,13 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
-<trimItem IMemento.internal.id="bottom"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Rotation.java" tooltip="Chapter1/onedot6/Rotation.java">
+<persistable path="/Chapter1/onedot6/Rotation.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IsBalanced.java" tooltip="Chapter4/src/fourdot1/IsBalanced.java">
 <persistable path="/Chapter4/src/fourdot1/IsBalanced.java"/>
 </file>
