@@ -33,7 +33,7 @@ public class IsRotation {
 		for(int start = 0; start < len; start ++){
 			int j = start;
 			for(int i = 0 ;i < len; i++){
-				if (s2.charAt(i) == s1.charAt(j)){
+				if (s2.charAt(i) == s1.charAt(j){
 					if( i == len -1)
 						return true;
 					j++;

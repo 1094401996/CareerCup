@@ -122,18 +122,18 @@ public class BinaryTree {
     
     private int checkHeight(Node root){
     	if(root == null)
-    		return -1;
+    		return 0;
     	int leftHeight = checkHeight(root.getLeft());
-    	if(leftHeight == -2){
-    		return -2;
+    	if(leftHeight == -1){
+    		return -1;
     	}
         int rightHeight = checkHeight(root.getRight());
-        if (rightHeight == -2){
-        	return -2;
+        if (rightHeight == -1){
+        	return -1;
         }
         int heightDiff = Math.abs(leftHeight - rightHeight);
         if (heightDiff > 1){
-        	return -2;
+        	return -1;
         }else{
         	return Math.max(leftHeight,rightHeight) + 1;
         }
