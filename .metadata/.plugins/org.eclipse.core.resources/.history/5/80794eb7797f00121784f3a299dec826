@@ -1,0 +1,39 @@
+package split;
+
+import java.util.ArrayList;
+
+
+public class Split {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		  String str= "@@@@@@you@@@@are@@@@@really@@@@@@@stupid@@@@@@@";
+		  char s = '@';
+		  ArrayList result =split(str,s);
+		  for (int i = 0; i < result.size();i++){
+			  System.out.print(result.get(i));
+		  }
+	}
+	
+	public static ArrayList split(String str, char s){
+		ArrayList list = new ArrayList();
+		boolean flag = true;
+		int start = 0;
+		for(int i = 0 ; i < str.length(); i ++){
+			if(str.charAt(i) == s){
+				if(flag == true){
+					start ++;
+				}else{
+					list.add(new String(str.substring(start,i));
+				}
+			}else{
+				flag = false;
+			}
+		}
+		
+		return list;
+	}
+
+}

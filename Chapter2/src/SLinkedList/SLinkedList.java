@@ -17,7 +17,7 @@ public class SLinkedList {
 			append(val[i]);
 		}
 	}
-	
+	//加在尾部
 	public void append(int val){
 		SNode s = new SNode(val,null);
 		if(tail == null){ 
@@ -35,7 +35,7 @@ public class SLinkedList {
 		tail = s;
 		size++;
 	}
-	
+	//加在头部
 	public void prepend(int val){
 		SNode s = new SNode(val,head);
 		if(head == null)
@@ -43,6 +43,15 @@ public class SLinkedList {
 		head = s;
 		size++;
 	}
+	public void prepend(SNode s){
+		if(head == null){
+			tail  = s;
+		}
+		head  = s;
+		size ++;
+		
+	}
+	//删除头部节点
 	public void deleteHead(){
 		if (head == null)
 			return;
@@ -50,6 +59,7 @@ public class SLinkedList {
 		size--;
 		
 	}
+	//删除尾部节点
 	public void deleteTail(){
 		if(tail == null)
 			return;
@@ -62,8 +72,9 @@ public class SLinkedList {
 		size--;
 		
 	}
+	//删除第i个节点 头节点为第0个
 	public void deleteIth(int i){
-		if(i >= length())
+		if(i >= length() ||i < 0)
 			return ;
 		if(i == length() - 1){
 			deleteTail();
@@ -83,17 +94,24 @@ public class SLinkedList {
 		size--;
 		return ;
 	}
+	public void deleteIthFromTail(int i){
+		this.deleteIth(this.size - 1 - i);
+	}
+	public SNode ithNode(int i){
+		return this.ithNodeFromTail(size - 1 - i);
+	}
 	public SNode ithNodeFromTail(int i){
 		if ((tail == null)&&(i >=length()))
 				return null;
 		SNode s = head;
 		int j = 0;
-		while(j != (size - 1 -i)){
+		while(j != (size - 1 - i)){
 			s = s.getNext();
 			j++;
 		}
 		return s;
 	}
+	//这个方法可以好好研究一下。。。。不知刀自己当时怎么想到的。。。
 	public void partitionList(int i){
 		if(size == 0)
 			return ;
@@ -161,6 +179,8 @@ public class SLinkedList {
 			curr = curr.getNext();
 		}
 	}
+	//curr指向当前节点，prev指向curr前面的那个节点，每次检查curr的时候，使用一个runner从头部开始扫描，这里有一个循环不变量：【head prev】之间的元素都是不同的，
+	//这里有点插入排序的思想在里面
 	public void delDup2(){
 		if(head == null)
 			return ;
@@ -183,56 +203,6 @@ public class SLinkedList {
 			}
 		}
 	}
-	public void deldup3(){
-		if(head == null)
-			return ;
 	
-	SNode prev = head;
-	SNode curr = prev.getNext();
-	while(curr != null){
-		if(curr.getVal() == prev.getVal()){
-			curr = curr.getNext();
-		    prev.SetNext(curr.getNext());
-		    size--;
-		}
-		else{
-			SNode runner = curr.getNext();
-			while(runner != null){
-				if(runner.getVal() == curr.getVal()){
-					prev.SetNext(curr.getNext());
-					curr = curr.getNext();
-					break;
-				}
-				runner = runner.getNext();
-			}
-			if(runner == null){
-				prev = prev.getNext();
-				curr = curr.getNext();
-			}
-		
-		}
-			
-		}
-	}
-	public static void main(String[]args){
-		int val[] = {1,2,4,5,6,5,3,3,3,3,1,3,5,6};
-		SLinkedList s = new SLinkedList(val);
-		
-		s.deleteIth(13);
-		s.printList();
-		s.delDup1();
-		s.printList();
-		/*int data[] = {1,1,4,5,6,5,3,3,3,3,1,3,5,6};
-		SLinkedList list = new SLinkedList(data);
-		list.printList();
-		list.delDup2();
-		list.printList();
-		int data1[] = {1,1,1,1,1,1,1,1,1,1,1};
-		SLinkedList list1 = new SLinkedList(data1);
-		list1.printList();
-		list1.delDup2();
-		list1.printList();
-		*/
 	
-	}
 }

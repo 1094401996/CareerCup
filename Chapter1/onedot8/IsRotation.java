@@ -25,6 +25,9 @@ public class IsRotation {
 		if (len1 != len2)
 			return false;
 		s1.append(s1);
+		String a = "anc";
+		String b = "a";
+		a.contains(b);
 		return isSubstring(s1,s2);
 	}
 	

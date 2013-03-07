@@ -1,0 +1,22 @@
+package twodot4;
+/**2.4
+ * Write code to partition a linked list around a value x, 
+ * such that all nodes less than x come before all nodes greater than of equal to x.
+ * Method:
+ * 
+ * 
+ */
+
+import SLinkedList.SLinkedList;
+
+public class PartitionList {
+	public static void main(String[]args){
+		int[] data = {5,6,8,1,9,10,1,2,3};
+		SLinkedList s = new SLinkedList(data);
+		s.partitionList(8);
+		System.out.println(s.length());
+		s.printList();
+		
+	}
+
+}

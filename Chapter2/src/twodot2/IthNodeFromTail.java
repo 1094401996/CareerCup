@@ -1,4 +1,8 @@
 package twodot2;
+/**2.2
+ * Implement an algorithm to find the kth to last element of a singly linked list.
+ * 类中提供了一个方法
+ */
 
 import SLinkedList.*;
 

@@ -1,4 +1,9 @@
 package binarytree;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class BinaryTree {
 	private Node root;
 	
@@ -77,6 +82,7 @@ public class BinaryTree {
     public Node getRoot(){
     	return root;
     }
+    //先序遍历
     public void preorder(Node p ){
     	 if (p == null)
   		   return ;
@@ -85,6 +91,7 @@ public class BinaryTree {
     		preorder(p.getRight());
     	
     }
+    //中序遍历
     public void inorder(Node p){
     	   if (p == null)
     		   return ;
@@ -92,6 +99,7 @@ public class BinaryTree {
     		System.out.print(p.getElement() + " ");
     		inorder(p.getRight());
     	}
+    //后序遍历
     
     public void postorder(Node p ){
     	 if (p == null)
@@ -101,6 +109,50 @@ public class BinaryTree {
     		System.out.print(p.getElement() + " ");
     	
 
+    }
+    //层次遍历
+    public void levelorder(Node p){
+    	if(p == null)
+    		return ;
+    	Queue<Node> queue = new LinkedList<Node>();
+    	queue.offer(p);
+    	while(queue.size() > 0){
+    		Node temp = queue.poll();
+    		System.out.print(temp.getElement()+" ");
+    		if(temp.getLeft()!=null){
+    			queue.offer(temp.getLeft());
+    		}
+    		if(temp.getRight() != null){
+    			queue.offer(temp.getRight());
+    		}
+    		
+    	}
+    	System.out.println();
+    }
+    //chapter 4.4 
+    public ArrayList linlkedTree(Node p ){
+    	if(p == null)
+    		return null;
+    	int H = getHeight(p);
+    	ArrayList al = new ArrayList();
+    	for(int i = 0; i < H + 1;i++){
+    		al.add(new LinkedList());
+    	}
+    	Queue<Node> queue = new LinkedList<Node>();
+    	queue.offer(p);
+    	while(queue.size() > 0){
+    		Node temp = queue.poll();
+    		int h = getHeight(temp);
+    	    al.get(h).add(temp.getElement());
+    		if(temp.getLeft()!=null){
+    			queue.offer(temp.getLeft());
+    		}
+    		if(temp.getRight() != null){
+    			queue.offer(temp.getRight());
+    		}
+    		
+    	}
+    	return la;
     }
     public int getHeight(Node node){
     	if (node == null)

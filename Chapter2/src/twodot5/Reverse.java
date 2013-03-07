@@ -1,24 +1,37 @@
 package twodot5;
-
+/**
+ * You have two numbers represented by a linked list, where each node contains a single digit. The digits are stored in reverse order, such that the 1's digit is at the head of the list. Write a function that adds the two numbers and returns the sum as a linked list.
+ * EXAMPLE
+ * Input: (7 -> 1 -> 6) + (5 -> 9 -> 2). That is, 617 + 295
+ * output: 2 -> 1 -> 9. That is, 912.
+ * 
+ */
 import SLinkedList.SLinkedList;
 import SLinkedList.SNode;
-/*´ËÌâÒ»¿ªÊ¼Ê¹ÓÃÁËËã·¨µ¼ÂÛµÄÖĞµÄ·½·¨ µ«ÊÇÓĞbug....²»ÖªµÀÔõÃ´»ØÊÂ¡£¡£¡£¡£»ØÍ·ÔÙ¿´¿´
- * */
+
 public class Reverse {
 	public static void main(String [] args){
 		int[] data1 = {1,8,9,6};
 		int[] data2 = {9,6,7,4};
 		SLinkedList s1 = new SLinkedList(data1);
 		SLinkedList s2 = new SLinkedList(data2);
-		SLinkedList sum = new SLinkedList();
-		sum.printList();
-		sum(s1,s2,sum);
+		SLinkedList sum1 = new SLinkedList();
+		sum1.printList();
+		sum1(s1,s2,sum1);
 		s1.printList();
 		s2.printList();
-		sum.printList();
+		sum1.printList();
+		System.out.println();
+		SLinkedList sum2 = new SLinkedList();
+		sum2.printList();
+		sum2(s1,s2,sum2);
+		s1.printList();
+		s2.printList();
+		sum2.printList();
+		
 	}
 	
-	public static void sum(SLinkedList s1, SLinkedList s2, SLinkedList sum){
+	public static void sum1(SLinkedList s1, SLinkedList s2, SLinkedList sum){
 		SNode  node1 = s1.getHead();
 		SNode  node2 = s2.getHead();
 		int carry = 0;
@@ -46,6 +59,26 @@ public class Reverse {
 			sum.append(carry);
 		
 	}	
-
+	//è¿™ä¸ªæ–¹æ³•æ˜¯åœ¨ç®—æ³•å¯¼è®ºä¸Šé¢çœ‹åˆ°çš„
+	public static void sum2(SLinkedList s1, SLinkedList s2, SLinkedList sum){
+		SNode  node1 = s1.getHead();
+		SNode  node2 = s2.getHead();
+		sum.append(0);
+		sum.append(0);
+		SNode node3 = sum.getHead();
+		while ((node1 != null) || (node2 != null)){
+			node3.setVal((node1.getVal() + node2.getVal() + node3.getVal())%10);
+			node3 = node3.getNext();
+			node3.setVal((node1.getVal() + node2.getVal() + node3.getVal())/10);
+			sum.append(0);
+			node1 = node1.getNext();
+			node2 = node2.getNext();
+		}
+		if(sum.getTail().getVal() == 0){
+			sum.deleteTail();
+		}
+		
+	}
+		
 
 }
