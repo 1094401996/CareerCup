@@ -17,6 +17,12 @@ public class SLinkedList {
 			append(val[i]);
 		}
 	}
+	public void setHead(SNode s){
+		head = s;
+	}
+	public void setTail(SNode s){
+		tail = s;
+	}
 	//加在尾部
 	public void append(int val){
 		SNode s = new SNode(val,null);
@@ -98,9 +104,10 @@ public class SLinkedList {
 		this.deleteIth(this.size - 1 - i);
 	}
 	public SNode ithNode(int i){
-		return this.ithNodeFromTail(size - 1 - i);
+		return this.ithNodeFromTail1(size - 1 - i);
 	}
-	public SNode ithNodeFromTail(int i){
+	//the method needs to know the size of linked list
+	public SNode ithNodeFromTail1(int i){
 		if ((tail == null)&&(i >=length()))
 				return null;
 		SNode s = head;
@@ -111,7 +118,75 @@ public class SLinkedList {
 		}
 		return s;
 	}
-	//这个方法可以好好研究一下。。。。不知刀自己当时怎么想到的。。。
+	public SNode ithNodeFromTail2(int i){
+		SNode f = this.head;
+		SNode s = this.head;
+		int j = 0;
+		while(j != i){
+			if (f== null){
+				System.out.println("out of range");
+				break;
+			}
+			f = f.getNext();	
+			j++;
+		}
+		if(f == null){
+			return f;
+		}
+		while(f.getNext() != null){
+			f = f.getNext();
+			s = s.getNext();
+		}
+		return s;
+	}
+	//reverse链表
+	public SNode ithNodeFromTail3(int i){
+		SNode curr = this.getHead();
+		SNode next = curr.getNext();
+		curr.SetNext(null);
+		while(next!= null){
+			SNode temp = curr;
+			curr = next;
+			next = next.getNext();
+			curr.SetNext(temp);
+		}
+		int j = 0;
+		SNode s = this.getTail();
+		while(j != i){
+			if(s == null){
+				System.out.println("out of range");
+				break;
+			}
+			s = s.getNext();
+			j++;
+		}
+		//恢复链表
+		next = curr.getNext();
+		curr.SetNext(null);
+		while(next != null){
+			SNode temp = curr;
+			curr = next;
+			next = next.getNext();
+			curr.SetNext(temp);
+		}
+		return s;
+	}
+	
+	//递归法,书上的答案，虽然不是最优，但思想很是碉堡
+	public SNode ithNodeFromTail4(SNode s ,int k, IntWrapper i){
+		 if(s == null){
+			 return null;
+		 }
+		 SNode node = ithNodeFromTail4(s.getNext(),k,i);
+		 i.value = i.value + 1;
+		 if(i.value == k){
+			 return s;
+		 }
+		 return node;
+	}
+	
+
+	//这个方法可以好好研究一下。。。。快排的思想。。。
 	public void partitionList(int i){
 		if(size == 0)
 			return ;

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;SLinkedList.Wrapper.java&apos; to &apos;IntWrapper.java&apos;&#x0A;- Original project: &apos;Chapter2&apos;&#x0A;- Original element: &apos;SLinkedList.Wrapper.java&apos;&#x0A;- Renamed element: &apos;SLinkedList.IntWrapper.java&apos;" description="Rename compilation unit &apos;Wrapper.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;SLinkedList{Wrapper.java" name="IntWrapper.java" references="false" stamp="1362676946935" version="1.0"/>
+</session>

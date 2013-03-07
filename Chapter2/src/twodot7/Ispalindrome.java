@@ -1,6 +1,6 @@
 package twodot7;
 /*
- * ╢клБй╧сцак2.6╣д╥╫╥╗ё╛╩╧кЦ╨цсцё╛╣╧в╙ж╦уКй╠тксцакя╜╩╥╡╩╠Да©╣д╪╪гиё╛уБ╦Ж╨эжьр╙ё╛р╙╡╩хщрв╦Ц╩Л
+ * О©╫О©╫О©╫О©╫й╧О©╫О©╫О©╫О©╫2.6О©╫д╥О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫цёО©╫О©╫О©╫в╙ж╦О©╫О©╫й╠О©╫О©╫О©╫О©╫О©╫О©╫я╜О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫д╪О©╫О©╫иёО©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫р╙О©╫О©╫р╙О©╫О©╫О©╫О©╫О©╫в╦О©╫О©╫
  */
 import SLinkedList.SLinkedList;
 import SLinkedList.SNode;
@@ -44,8 +44,6 @@ public class Ispalindrome {
 		}
 		SNode rec = curr;
 		SNode start = slow;
-//		System.out.println(curr.getVal());
-//		System.out.println(start.getVal());
 		if(s.length() % 2 == 0){
 			while(curr != null){
 				if(curr.getVal() == start.getVal()){

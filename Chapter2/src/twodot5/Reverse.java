@@ -59,7 +59,7 @@ public class Reverse {
 			sum.append(carry);
 		
 	}	
-	//这个方法是在算法导论上面看到的
+	//这个方法是在算法导论上面看到的，比较适合位数一样的时候。。。。
 	public static void sum2(SLinkedList s1, SLinkedList s2, SLinkedList sum){
 		SNode  node1 = s1.getHead();
 		SNode  node2 = s2.getHead();
@@ -67,12 +67,22 @@ public class Reverse {
 		sum.append(0);
 		SNode node3 = sum.getHead();
 		while ((node1 != null) || (node2 != null)){
-			node3.setVal((node1.getVal() + node2.getVal() + node3.getVal())%10);
+			int n1 = 0;
+			int n2 = 0;
+			if(node1 != null){
+				n1 = node1.getVal();
+			}
+			if(node2 != null){
+				n2 = node2.getVal();
+			}
+			node3.setVal((n1 + n2 + node3.getVal())%10);
 			node3 = node3.getNext();
-			node3.setVal((node1.getVal() + node2.getVal() + node3.getVal())/10);
+			node3.setVal((n1 + n2 + node3.getVal())/10);
 			sum.append(0);
-			node1 = node1.getNext();
-			node2 = node2.getNext();
+			if(node1 != null)
+				node1 = node1.getNext();
+			if(node2 != null)
+				node2 = node2.getNext();
 		}
 		if(sum.getTail().getVal() == 0){
 			sum.deleteTail();
