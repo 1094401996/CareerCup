@@ -2085,3 +2085,12 @@ Command-line arguments:  -os linux -ws gtk -arch x86
 !MESSAGE Could not find view: org.eclipse.ui.internal.introview
 !SUBENTRY 1 unknown 0 0 2013-03-07 09:14:34.648
 !MESSAGE OK
+!SESSION 2013-03-10 22:54:05.088 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2013-03-10 22:54:58.557
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.

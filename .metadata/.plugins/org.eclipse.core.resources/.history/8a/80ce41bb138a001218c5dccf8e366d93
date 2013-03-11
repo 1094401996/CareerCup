@@ -1,10 +1,6 @@
 package twodot7;
-/* 2.7
- * Implement a function to check if a linked list is a palindrome.
- * method: 老方法 反转指针  但是只转一半  然后从中间往两边走。。。
- * 
- * 别人的好方法：这位大牛还还用了递归的思想。。。。。实现的代码也比我优雅  要借鉴。。。。
- * https://github.com/quantumrose/CareerCup/blob/master/2.7.IsPalindrome.java
+/*
+ * ����ʹ����2.6�ķ�����������ã���תָ��ʱ������ѭ���������ļ��ɣ��������Ҫ��Ҫ�����׸��
  */
 import SLinkedList.SLinkedList;
 import SLinkedList.SNode;
@@ -48,7 +44,6 @@ public class Ispalindrome {
 		}
 		SNode rec = curr;
 		SNode start = slow;
-		//如果长度是偶数。。。
 		if(s.length() % 2 == 0){
 			while(curr != null){
 				if(curr.getVal() == start.getVal()){
@@ -64,7 +59,6 @@ public class Ispalindrome {
 			recovery(s,rec,slow);
 			return true;
 		}
-		//如果是长度是基数。。。。
 		else{
 			start = start.getNext();
 			while(curr != null){
@@ -83,7 +77,7 @@ public class Ispalindrome {
 		    
 		
 	}
-	//回复链表
+	
 	public static void recovery(SLinkedList s, SNode curr, SNode slow ){
 		SNode next = curr.getNext();
 		curr.SetNext(slow);
