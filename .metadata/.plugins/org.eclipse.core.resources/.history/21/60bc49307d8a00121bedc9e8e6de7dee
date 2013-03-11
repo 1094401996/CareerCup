@@ -1,0 +1,63 @@
+package threedot2;
+/**career 3.2
+ * How would you design a stack which, in addition to push and pop, 
+ * also has a function min which returns the minimum element?
+ * Push, pop and min should all operate in O(1) time.
+ * @author geng
+ *  有用的链接： http://blog.csdn.net/ssjhust123/article/details/7752878
+ */
+
+public class MinStack2 {
+	 Stack s;
+	public MinStack2(int cap){
+		s = new Stack(100);
+	}
+	 public void push(int data) throws Exception{
+		 if(s.isEmpty()){
+			 s.push(data);
+			 s.push(data);
+		 }else{
+			 int min = s.pop();
+			 s.push(data - min);
+			 s.push(data < min ? data : min);
+		 }
+	 }
+	 public int pop() throws Exception{
+		 int min = s.pop();
+		 int diff = s.pop();
+		 s.pop();
+		 if(diff < 0){
+			 s.push(min - diff);
+			 return min;
+		 }else{
+			 if(!s.isEmpty()){
+				 s.push(min);
+				 return diff + min;
+			 }
+			 return min;
+		 }
+	 }
+	 public int min() throws Exception{
+		 return s.peek();
+	 }
+	 public static void main(String[]args) throws Exception{
+			MinStack s = new MinStack(100);
+			s.push(3);
+			s.push(2);
+			s.push(5);
+			s.push(4);
+			s.push(1);
+			System.out.println(s.min());
+			s.pop();
+			System.out.println(s.min());
+			s.pop();
+			System.out.println(s.min());
+			s.pop();
+			System.out.println(s.min());
+			s.pop();
+			System.out.println(s.min());
+
+			
+			
+		}
+}

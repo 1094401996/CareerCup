@@ -1,5 +1,11 @@
 package threedot2;
-
+/**career 3.2
+ * How would you design a stack which, in addition to push and pop, 
+ * also has a function min which returns the minimum element?
+ * Push, pop and min should all operate in O(1) time.
+ * @author geng
+ * method1: 用一个helper堆栈，但需要额外的空间，方法二不需要额外空间，但比较难以理解
+ */
     class Stack {
 		private int[] a;
 		private int N;
