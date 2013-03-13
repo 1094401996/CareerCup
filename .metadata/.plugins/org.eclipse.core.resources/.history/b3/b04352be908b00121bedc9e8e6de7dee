@@ -1,0 +1,51 @@
+package ThreeDot6;
+
+public class AscendingStack {
+	
+}
+
+
+public static Stack AscendingStack(Stack s){
+	Stack ns = new Stakc(s.size());
+}
+
+
+
+
+
+
+
+class Stack {
+	private int[] a;
+	private int N;
+	public Stack (int cap){
+		a = new int[cap] ;
+		}
+	public boolean isEmpty(){
+		return N == 0;
+	}
+	public boolean isFull(){
+		return N == a.length;
+	}
+	public int size(){
+		return N;
+	}
+	public void push(int data) throws Exception{
+		if(N >= a.length){
+			throw new Exception("stackoverflow");
+		}
+		a[N++] = data;
+	}
+	public int pop(){
+		return a[--N];
+	}
+	public int peek() throws Exception{
+		if (!isEmpty()){
+			return a[N - 1];
+		}
+		throw new Exception("empty stack");
+	}
+	public void clear(){
+		N = 0;
+	}
+}

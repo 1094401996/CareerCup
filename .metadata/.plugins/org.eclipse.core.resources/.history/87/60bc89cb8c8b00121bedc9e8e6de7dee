@@ -8,7 +8,7 @@ package threedot2;
  *  http://blog.csdn.net/yysdsyl/article/details/4283806 
  *  http://blog.csdn.net/ssjhust123/article/details/7752878
  *  
- *  method2:
+ *  method:
  *  push(int elem)函数在栈中压入当前元素与当前栈中最小元素的差值，然后通过比较当前
  *  元素与当前栈中最小元素大小，并将它们中间的较小值压入。pop()函数执行的时候，先pop
  *  出栈顶的两个值，这两个值分别是当前栈中最小值min和最后压入的元素与栈中最小值的差值diff。
