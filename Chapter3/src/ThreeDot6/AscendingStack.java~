@@ -1,5 +1,5 @@
 package ThreeDot6;
-//careercup 3.6
+
 public class AscendingStack {
 	public static void main(String[] args) throws Exception{
 
