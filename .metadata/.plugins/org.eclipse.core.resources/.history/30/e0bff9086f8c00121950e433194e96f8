@@ -1,0 +1,21 @@
+package threedot7;
+
+public class Queue1 {
+	int N;
+	int a[];
+	int front;
+	int rear;
+	
+	public Queue1(int N){
+		this.N = N;
+		a = new int[N];
+		front = 0;
+		rear = 0;
+		
+	}
+	public boolean isEmpty(){
+		return front == rear;
+	}
+	
+}
+

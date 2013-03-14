@@ -1,0 +1,30 @@
+package threedot4;
+
+public class Tower {
+	
+	public static void main(String[]args){
+		int n =10;
+		String a = "TowerA";
+		String b = "TowerB";
+		String c = "TowerC";
+		hanoi(n,a,c,b);
+	}
+	//move n plates form a to c with the help of b
+	public static void hanoi(int n, String origin, String destination , String buffer ){
+		if(n > 0){
+			//move top n-1 disks form origin to buffer using destination as a buffer
+			hanoi(n -1 , origin, buffer, destination);
+			
+			/*move top from origin to destination*/
+			moveTop(origin,destination);
+			
+			//move top n-1 disks form buffer to detination, using origin as the a buffer;
+			hanoi(n - 1 , buffer, destination, origin);
+			
+		}
+	}
+	private static void moveTop(String origin, String destination){
+		System.out.println(origin + "---->" + destination);
+	}
+
+}

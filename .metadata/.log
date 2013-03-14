@@ -2414,3 +2414,21 @@ Contains: Resource is out of sync with the file system: '/Chapter3/src/onedot5'.
 !MESSAGE Problems encountered while moving resources.
 !SUBENTRY 2 org.eclipse.core.resources 1 4 2013-03-11 12:40:42.279
 !MESSAGE Resource is out of sync with the file system: '/Chapter3/src/onedot5'.
+!SESSION 2013-03-13 13:58:14.909 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_27
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2013-03-13 13:58:32.296
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2013-03-13 21:53:18.491 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_27
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2013-03-13 21:53:34.131
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.

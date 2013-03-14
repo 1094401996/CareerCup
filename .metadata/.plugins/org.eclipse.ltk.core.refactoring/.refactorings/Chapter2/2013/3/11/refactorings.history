@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 elements to &apos;Chapter3/src/threedot7&apos;&#x0A;- Original project: &apos;Chapter2&apos;&#x0A;- Destination element: &apos;Chapter3/src/threedot7&apos;&#x0A;- Original elements:&#x0A;     SLinkedList.SLinkedList.java&#x0A;     SLinkedList.SNode.java&#x0A;     SLinkedList.IntWrapper.java" description="Copy compilation units" destination="=Chapter3/src&lt;threedot7" element1="/src&lt;SLinkedList{SLinkedList.java" element2="/src&lt;SLinkedList{SNode.java" element3="/src&lt;SLinkedList{IntWrapper.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1363242415708" units="3" version="1.0"/>
+</session>

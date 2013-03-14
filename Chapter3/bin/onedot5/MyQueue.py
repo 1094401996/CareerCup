@@ -1,4 +1,9 @@
 __metaclass__ = type
+#career 3.5
+#Implement a MyQueue class which implements a queue using two stacks.
+#两个堆栈来回倒
+#有用的链接：http://www.cnblogs.com/wanghui9072229/archive/2011/11/22/2259391.html
+
 class MyStack:
     def __init__(self,capacity = 20):
         self.stack = []

@@ -1,0 +1,39 @@
+package threedot7;
+
+public class Queue1 {
+	int N;
+	int a[];
+	int front;
+	int rear;
+	
+	public Queue1(int N){
+		this.N = N;
+		a = new int[N];
+		front = 0;
+		rear = 0;
+		
+	}
+	public boolean isEmpty(){
+		return front == rear;
+	}
+	public int size(){
+		return (N - front + rear);
+	}
+	public int peekfront(){
+		if(isEmpty(){
+			throw new Exception("empty queue");
+		}else{
+			return a[front];
+		}
+	public int peekrear(){
+		if(isEmpty()){
+			throw new Exception("empty queue");
+		}else{
+			int i = rear - 1;
+			return a[i]
+		}
+	public 
+	}
+	}
+	
+}
