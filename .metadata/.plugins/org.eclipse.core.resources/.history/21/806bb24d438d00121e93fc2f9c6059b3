@@ -1,0 +1,23 @@
+package Graph;
+
+public class DepthFirstPaths {
+	private boolean[] marked;
+	private int[] edgeto; //last vertext on known path to theis vertex
+	private final int s; //sourse
+	
+	public DepthFirstPaths(Graph G, int s){
+		marked = new boolean[G.V()];
+		edgeto = new int[G.V()];
+		this.s = s;
+		dfs(G,s);
+	}
+	private void dfs(Graph G, int v){
+		marked[v] = true;
+		for(int w: G.adj(v)){
+			if(!marked[w]){
+				edgeto[w] = v;
+				dfs(G,w);
+			}
+		}
+	}
+}

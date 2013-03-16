@@ -130,30 +130,30 @@ public class BinaryTree {
     	System.out.println();
     }
     //chapter 4.4 
-    public ArrayList linlkedTree(Node p ){
-    	if(p == null)
-    		return null;
-    	int H = getHeight(p);
-    	ArrayList al = new ArrayList();
-    	for(int i = 0; i < H + 1;i++){
-    		al.add(new LinkedList());
-    	}
-    	Queue<Node> queue = new LinkedList<Node>();
-    	queue.offer(p);
-    	while(queue.size() > 0){
-    		Node temp = queue.poll();
-    		int h = getHeight(temp);
-    	    al.get(h).add(temp.getElement());
-    		if(temp.getLeft()!=null){
-    			queue.offer(temp.getLeft());
-    		}
-    		if(temp.getRight() != null){
-    			queue.offer(temp.getRight());
-    		}
-    		
-    	}
-    	return la;
-    }
+//    public ArrayList linlkedTree(Node p ){
+//    	if(p == null)
+//    		return null;
+//    	int H = getHeight(p);
+//    	ArrayList al = new ArrayList();
+//    	for(int i = 0; i < H + 1;i++){
+//    		al.add(new LinkedList());
+//    	}
+//    	Queue<Node> queue = new LinkedList<Node>();
+//    	queue.offer(p);
+//    	while(queue.size() > 0){
+//    		Node temp = queue.poll();
+//    		int h = getHeight(temp);
+//    	    al.get(h).add(temp.getElement());
+//    		if(temp.getLeft()!=null){
+//    			queue.offer(temp.getLeft());
+//    		}
+//    		if(temp.getRight() != null){
+//    			queue.offer(temp.getRight());
+//    		}
+//    		
+//    	}
+//    	return la;
+//    }
     public int getHeight(Node node){
     	if (node == null)
     		return -1;

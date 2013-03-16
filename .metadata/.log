@@ -2432,3 +2432,119 @@ Command-line arguments:  -os linux -ws gtk -arch x86
 
 !ENTRY org.eclipse.core.resources 2 10035 2013-03-13 21:53:34.131
 !MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2013-03-14 20:26:44.411 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_27
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.ui 4 4 2013-03-14 20:26:55.398
+!MESSAGE Could not create view: 'org.eclipse.ui.internal.introview'.
+
+!ENTRY org.eclipse.ui 4 0 2013-03-14 20:26:57.798
+!MESSAGE Problems occurred restoring workbench.
+!SUBENTRY 1 unknown 0 0 2013-03-14 20:26:57.798
+!MESSAGE OK
+!SUBENTRY 1 unknown 0 0 2013-03-14 20:26:57.798
+!MESSAGE OK
+!SUBENTRY 1 unknown 0 0 2013-03-14 20:26:57.798
+!MESSAGE OK
+!SUBENTRY 1 unknown 0 0 2013-03-14 20:26:57.798
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.ui 4 0 2013-03-14 20:26:57.798
+!MESSAGE Unable to restore perspective: Workspace - Java.
+!SUBENTRY 2 org.eclipse.ui 0 0 2013-03-14 20:26:57.798
+!MESSAGE Problems occurred restoring perspective.
+!SUBENTRY 3 org.eclipse.ui 0 0 2013-03-14 20:26:57.798
+!MESSAGE 
+!SUBENTRY 2 unknown 0 0 2013-03-14 20:26:57.798
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2013-03-14 20:26:57.798
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2013-03-14 20:26:57.798
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2013-03-14 20:26:57.798
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2013-03-14 20:26:57.798
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2013-03-14 20:26:57.798
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2013-03-14 20:26:57.798
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2013-03-14 20:26:57.798
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2013-03-14 20:26:57.798
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.ui 4 0 2013-03-14 20:26:57.798
+!MESSAGE Could not find view: org.eclipse.ui.internal.introview
+!SUBENTRY 1 unknown 0 0 2013-03-14 20:26:57.798
+!MESSAGE OK
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2013-03-14 20:29:35.985
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Timed out while retrieving the attached javadoc for ArrayList {key=Ljava/util/ArrayList;} [in ArrayList.class [in java.util [in /usr/lib/jvm/java-6-openjdk-i386/jre/lib/rt.jar]]] ]
+	at org.eclipse.jdt.internal.core.JavaElement.getURLContents(JavaElement.java:808)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1037)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:995)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:621)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:567)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:559)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:142)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:85)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1012 2013-03-14 20:29:35.987
+!MESSAGE Timed out while retrieving the attached javadoc for ArrayList {key=Ljava/util/ArrayList;} [in ArrayList.class [in java.util [in /usr/lib/jvm/java-6-openjdk-i386/jre/lib/rt.jar]]] 
+!SESSION 2013-03-15 19:46:21.928 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_27
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2013-03-15 19:46:37.051
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui 4 4 2013-03-15 19:46:42.470
+!MESSAGE Could not create view: 'org.eclipse.ui.internal.introview'.
+
+!ENTRY org.eclipse.ui 4 0 2013-03-15 19:46:48.988
+!MESSAGE Problems occurred restoring workbench.
+!SUBENTRY 1 unknown 0 0 2013-03-15 19:46:48.989
+!MESSAGE OK
+!SUBENTRY 1 unknown 0 0 2013-03-15 19:46:48.989
+!MESSAGE OK
+!SUBENTRY 1 unknown 0 0 2013-03-15 19:46:48.989
+!MESSAGE OK
+!SUBENTRY 1 unknown 0 0 2013-03-15 19:46:48.989
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.ui 4 0 2013-03-15 19:46:48.989
+!MESSAGE Unable to restore perspective: Workspace - Java.
+!SUBENTRY 2 org.eclipse.ui 0 0 2013-03-15 19:46:48.989
+!MESSAGE Problems occurred restoring perspective.
+!SUBENTRY 3 org.eclipse.ui 0 0 2013-03-15 19:46:48.989
+!MESSAGE 
+!SUBENTRY 2 unknown 0 0 2013-03-15 19:46:48.989
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2013-03-15 19:46:48.989
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2013-03-15 19:46:48.989
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2013-03-15 19:46:48.989
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2013-03-15 19:46:48.989
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2013-03-15 19:46:48.989
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2013-03-15 19:46:48.989
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2013-03-15 19:46:48.989
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2013-03-15 19:46:48.989
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.ui 4 0 2013-03-15 19:46:48.989
+!MESSAGE Could not find view: org.eclipse.ui.internal.introview
+!SUBENTRY 1 unknown 0 0 2013-03-15 19:46:48.989
+!MESSAGE OK

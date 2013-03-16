@@ -1,0 +1,24 @@
+package Graph;
+
+public class DepthFirstSearch {
+	private boolean[]connected;
+	private int count;
+	public DepthFirstSearch(Graph G, int s){
+		connected = new boolean[G.V()];
+		dfs(G,s);
+	}
+	private void dfs(Graph G, int v){
+		connected[v] = true;
+		count ++;
+		for(int w : G.adj[v]){
+			if(!connected[w])
+				dfs(G,w);
+		}
+	}
+	public boolean connnected(int w){
+		return connected[w];
+	}
+	public int count(){
+		return count;
+	}
+}
