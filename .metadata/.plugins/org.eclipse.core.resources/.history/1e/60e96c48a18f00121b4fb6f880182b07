@@ -1,7 +1,4 @@
 package fourdot5;
-/*Implement a function to check if a binary tree is a binary searchtree.
- * 好吧，自己写出递归的感觉还是不错的。。。。不过似乎方法恶心了点。。。下周再优化一下。。。
- * */
 
 import binarytree.BinaryTree;
 
