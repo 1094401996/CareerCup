@@ -102,9 +102,6 @@ public class BinaryTree {
     public Node getRoot(){
     	return root;
     }
-    public void setRoot(int element){
-    	root.setElement(element);
-    }
     //先序遍历
     public void preorder(Node p ){
     	 if (p == null)

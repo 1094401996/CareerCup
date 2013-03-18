@@ -74,12 +74,12 @@ public class BinaryTree {
 			return true;
 		}else{
 			boolean toLeft = true;
-			boolean toRight = true;
+			boolean toright = true;
 			if(x.getLeft() != null){
 				toLeft = (x.getElement() >= x.getLeft().getElement());
 			}
 			if(x.getRight() != null){
-				toRight = (x.getElement() < x.getRight().getElement());
+				toright = (x.getElement() < x.getRight().getElement());
 			}
 			return toLeft && toRight && isBST(x.getLeft()) && isBST(x.getRight());
 		}
@@ -101,9 +101,6 @@ public class BinaryTree {
     }
     public Node getRoot(){
     	return root;
-    }
-    public void setRoot(int element){
-    	root.setElement(element);
     }
     //先序遍历
     public void preorder(Node p ){

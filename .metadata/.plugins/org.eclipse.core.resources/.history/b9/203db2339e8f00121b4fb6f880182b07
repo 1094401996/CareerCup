@@ -64,26 +64,6 @@ public class BinaryTree {
 			return n;
 		
 	}
-	
-	public boolean isBST(){
-		return isBST(root);
-	}
-	
-	private boolean isBST(Node x){
-		if (x == null){
-			return true;
-		}else{
-			boolean toLeft = true;
-			boolean toRight = true;
-			if(x.getLeft() != null){
-				toLeft = (x.getElement() >= x.getLeft().getElement());
-			}
-			if(x.getRight() != null){
-				toRight = (x.getElement() < x.getRight().getElement());
-			}
-			return toLeft && toRight && isBST(x.getLeft()) && isBST(x.getRight());
-		}
-	}
     public Node findNode(int element){
     	Node p = root;
     	while(p != null){
@@ -101,9 +81,6 @@ public class BinaryTree {
     }
     public Node getRoot(){
     	return root;
-    }
-    public void setRoot(int element){
-    	root.setElement(element);
     }
     //先序遍历
     public void preorder(Node p ){
@@ -157,6 +134,7 @@ public class BinaryTree {
     	if(p == null)
     		return null;
     	int H = getHeight(p);
+//    	System.out.println(D+"hah" + getHeight(root));
     	LinkedList[] ll = new LinkedList[H + 1];
     	for(int i = 0 ; i < H + 1; i++){
     		ll[i] = new LinkedList();
@@ -167,7 +145,7 @@ public class BinaryTree {
     	int last = 1;
     	int level = 0;
     	while(cur < array.size()){
-    		last = array.size();//the new level begin,新的一行访问开始，重新定位last于当前行最后一个节点的下一个位置
+    		last = array.size();//the new level begin
     		while(cur < last){
     			ll[level].add(array.get(cur));
     			if(array.get(cur).getLeft()!= null){

@@ -64,26 +64,6 @@ public class BinaryTree {
 			return n;
 		
 	}
-	
-	public boolean isBST(){
-		return isBST(root);
-	}
-	
-	private boolean isBST(Node x){
-		if (x == null){
-			return true;
-		}else{
-			boolean toLeft = true;
-			boolean toRight = true;
-			if(x.getLeft() != null){
-				toLeft = (x.getElement() >= x.getLeft().getElement());
-			}
-			if(x.getRight() != null){
-				toRight = (x.getElement() < x.getRight().getElement());
-			}
-			return toLeft && toRight && isBST(x.getLeft()) && isBST(x.getRight());
-		}
-	}
     public Node findNode(int element){
     	Node p = root;
     	while(p != null){
@@ -101,9 +81,6 @@ public class BinaryTree {
     }
     public Node getRoot(){
     	return root;
-    }
-    public void setRoot(int element){
-    	root.setElement(element);
     }
     //先序遍历
     public void preorder(Node p ){
