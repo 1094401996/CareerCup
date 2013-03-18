@@ -13,8 +13,8 @@ public class Node {
 		this.element = element;
 	}
 	
-	public Node getParent(){
-		return this.parent;
+	public Node getParent(Node n){
+		return n.parent;
 	}
 	public int getElement() {
 		return element;

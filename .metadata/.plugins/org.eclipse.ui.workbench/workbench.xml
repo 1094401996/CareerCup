@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="23" version="2.0">
+<workbench progressCount="17" version="2.0">
 <workbenchAdvisor/>
-<window height="591" maximized="true" width="636" x="637" y="39">
+<window height="591" maximized="true" width="632" x="295" y="177">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -39,55 +39,34 @@
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BinarySearchST.java" partName="BinarySearchST.java" path="/home/gengchen/Desktop/github/CareerCup/Algorithms Princeton Chapter3/src/threedot1/BinarySearchST.java" title="BinarySearchST.java" tooltip="Algorithms Princeton Chapter3/src/threedot1/BinarySearchST.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Algorithms Princeton Chapter3/src/threedot1/BinarySearchST.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="707" selectionTopPixel="463"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BinaryTree.java" partName="BinaryTree.java" path="/home/gengchen/Desktop/github/CareerCup/Chapter4/src/binarytree/BinaryTree.java" title="BinaryTree.java" tooltip="Chapter4/src/binarytree/BinaryTree.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter4/src/binarytree/BinaryTree.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2147" selectionTopPixel="1396"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RemoveDul.java" partName="RemoveDul.java" path="/home/gengchen/Desktop/github/CareerCup/Chapter1/onedot3/RemoveDul.java" title="RemoveDul.java" tooltip="Chapter1/onedot3/RemoveDul.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter1/onedot3/RemoveDul.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1601" selectionTopPixel="461"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IsBST.java" partName="IsBST.java" path="/home/gengchen/Desktop/github/CareerCup/Chapter4/src/fourdot5/IsBST.java" title="IsBST.java" tooltip="Chapter4/src/fourdot5/IsBST.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter4/src/fourdot5/IsBST.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="44" selectionOffset="94" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UniqueChar.java" partName="UniqueChar.java" path="/home/gengchen/Desktop/github/CareerCup/Chapter1/onedot1/UniqueChar.java" title="UniqueChar.java" tooltip="Chapter1/onedot1/UniqueChar.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter1/onedot1/UniqueChar.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2456" selectionTopPixel="988"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LinlkedTree.java" partName="LinlkedTree.java" path="/home/gengchen/Desktop/github/CareerCup/Chapter4/src/fourdot4/LinlkedTree.java" title="LinlkedTree.java" tooltip="Chapter4/src/fourdot4/LinlkedTree.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter4/src/fourdot4/LinlkedTree.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="77" selectionOffset="426" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
-<view id="org.eclipse.debug.ui.DebugView" partName="Debug">
-<viewState/>
-</view>
-<view id="org.eclipse.ui.views.TaskList" partName="Tasks">
-<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.completionField" categoryGroup="none" markerContentGenerator="org.eclipse.ui.ide.tasksGenerator" partName="Tasks">
-<columnWidths org.eclipse.ui.ide.completionField="40" org.eclipse.ui.ide.descriptionField="350" org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="105" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.priorityField="35" org.eclipse.ui.ide.resourceField="105"/>
-<visible IMemento.internal.id="org.eclipse.ui.ide.completionField"/>
-<visible IMemento.internal.id="org.eclipse.ui.ide.priorityField"/>
-<visible IMemento.internal.id="org.eclipse.ui.ide.descriptionField"/>
-<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
-<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
-<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
-<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
-</viewState>
-</view>
-<view id="org.eclipse.debug.ui.VariableView" partName="Variables">
-<viewState/>
-</view>
-<view id="org.eclipse.debug.ui.BreakpointView" partName="Breakpoints">
-<viewState/>
-</view>
-<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<view id="org.eclipse.debug.ui.ExpressionView" partName="Expressions">
 <viewState/>
 </view>
 <view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
 <viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
 </view>
-<view id="org.eclipse.debug.ui.ExpressionView" partName="Expressions">
+<view id="org.eclipse.debug.ui.DebugView" partName="Debug">
 <viewState/>
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
+<category IMemento.internal.id="Errors"/>
 <category IMemento.internal.id="Warnings"/>
-<category IMemento.internal.id="Warnings (13 items)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="232" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -96,9 +75,6 @@
 <visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
 </viewState>
-</view>
-<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
-<viewState/>
 </view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
 <viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="">
@@ -129,7 +105,31 @@
 </customFilters>
 </viewState>
 </view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
+</view>
+<view id="org.eclipse.debug.ui.BreakpointView" partName="Breakpoints">
+<viewState/>
+</view>
+<view id="org.eclipse.debug.ui.VariableView" partName="Variables">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.TaskList" partName="Tasks">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.completionField" categoryGroup="none" markerContentGenerator="org.eclipse.ui.ide.tasksGenerator" partName="Tasks">
+<columnWidths org.eclipse.ui.ide.completionField="40" org.eclipse.ui.ide.descriptionField="350" org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="105" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.priorityField="35" org.eclipse.ui.ide.resourceField="105"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.completionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.priorityField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.descriptionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+</viewState>
+</view>
 <view id="org.eclipse.jdt.ui.SourceView" partName="Declaration"/>
+<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<viewState/>
+</view>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 </views>
 <perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
@@ -397,165 +397,164 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter3/src/threedot7/AnimalShelter.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter3/src/threedot6/AscendingStack.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/Chapter3/src/threedot6/AscendingStack.java~"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter3/src/threedot7/SLinkedList.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter3/src/threedot7/SNode.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter3/src/threedot7/Queue1.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Algorithms Princeton Chapter3/src/threedot1/BinarySearchST.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter1/onedot3/RemoveDul.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter1/onedot1/UniqueChar.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter1/onedot3/RemoveDul.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter4/src/fourdot4/LinlkedTree.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter4/src/binarytree/BinaryTree.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter1/onedot1/UniqueChar.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter4/src/binarytree/Node.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter4/src/fourdot5/IsBST.java"/>
 </editors>
-<item historyLabel="AnimalShelter.java" index="0">
-<position info="not_deleted" x="2285" y="0"/>
-</item>
-<item historyLabel="AnimalShelter.java" index="0">
-<position info="not_deleted" x="2310" y="0"/>
-</item>
-<item historyLabel="AnimalShelter.java" index="0">
-<position info="not_deleted" x="2311" y="0"/>
-</item>
-<item historyLabel="AnimalShelter.java" index="0">
-<position info="not_deleted" x="2336" y="0"/>
-</item>
-<item historyLabel="AnimalShelter.java" index="0">
-<position info="not_deleted" x="2337" y="0"/>
-</item>
-<item historyLabel="AnimalShelter.java" index="0">
-<position info="not_deleted" x="2362" y="0"/>
-</item>
-<item historyLabel="AnimalShelter.java" index="0">
-<position info="not_deleted" x="2363" y="0"/>
-</item>
-<item historyLabel="AnimalShelter.java" index="0">
-<position info="not_deleted" x="2405" y="0"/>
-</item>
-<item historyLabel="AnimalShelter.java" index="0">
-<position info="not_deleted" x="2423" y="0"/>
-</item>
-<item historyLabel="AnimalShelter.java" index="0">
-<position info="not_deleted" x="2425" y="0"/>
-</item>
-<item historyLabel="AnimalShelter.java" index="0">
-<position info="not_deleted" x="2716" y="0"/>
-</item>
-<item historyLabel="AnimalShelter.java" index="0">
-<position info="not_deleted" x="2712" y="0"/>
-</item>
-<item historyLabel="AnimalShelter.java" index="0">
-<position info="not_deleted" x="2716" y="0"/>
-</item>
-<item historyLabel="AnimalShelter.java" index="0">
-<position info="not_deleted" x="2710" y="0"/>
-</item>
-<item historyLabel="AnimalShelter.java" index="0">
-<position info="not_deleted" x="2716" y="0"/>
-</item>
-<item historyLabel="AnimalShelter.java" index="0">
-<position info="not_deleted" x="2425" y="0"/>
-</item>
-<item historyLabel="AnimalShelter.java" index="0">
-<position info="not_deleted" x="2716" y="0"/>
-</item>
-<item historyLabel="AnimalShelter.java" index="0">
-<position info="not_deleted" x="686" y="0"/>
-</item>
-<item historyLabel="AscendingStack.java" index="1">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="AscendingStack.java~" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="AscendingStack.java" index="1">
-<position info="not_deleted" x="341" y="13"/>
-</item>
-<item historyLabel="AnimalShelter.java" index="0">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="SLinkedList.java" index="3">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="SNode.java" index="4">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Queue1.java" index="5">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="AnimalShelter.java" index="0">
-<position info="not_deleted" x="605" y="81"/>
-</item>
-<item historyLabel="BinarySearchST.java" index="6">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="BinarySearchST.java" index="6">
-<position info="not_deleted" x="100" y="0"/>
-</item>
-<item historyLabel="BinarySearchST.java" index="6">
-<position info="not_deleted" x="123" y="0"/>
-</item>
-<item historyLabel="BinarySearchST.java" index="6">
-<position info="not_deleted" x="147" y="0"/>
-</item>
-<item historyLabel="BinarySearchST.java" index="6">
-<position info="not_deleted" x="195" y="0"/>
-</item>
-<item historyLabel="BinarySearchST.java" index="6">
-<position info="not_deleted" x="196" y="0"/>
-</item>
-<item historyLabel="BinarySearchST.java" index="6">
-<position info="not_deleted" x="216" y="0"/>
-</item>
-<item historyLabel="BinarySearchST.java" index="6">
-<position info="not_deleted" x="237" y="0"/>
-</item>
-<item historyLabel="BinarySearchST.java" index="6">
-<position info="not_deleted" x="261" y="0"/>
-</item>
-<item historyLabel="BinarySearchST.java" index="6">
-<position info="not_deleted" x="284" y="0"/>
-</item>
-<item historyLabel="BinarySearchST.java" index="6">
-<position info="not_deleted" x="1060" y="0"/>
-</item>
-<item historyLabel="BinarySearchST.java" index="6">
-<position info="not_deleted" x="1010" y="0"/>
-</item>
-<item historyLabel="BinarySearchST.java" index="6">
-<position info="not_deleted" x="1057" y="0"/>
-</item>
-<item historyLabel="BinarySearchST.java" index="6">
-<position info="not_deleted" x="968" y="0"/>
-</item>
-<item historyLabel="BinarySearchST.java" index="6">
-<position info="not_deleted" x="619" y="0"/>
-</item>
-<item historyLabel="BinarySearchST.java" index="6">
-<position/>
-</item>
-<item historyLabel="BinarySearchST.java" index="6">
-<position info="not_deleted" x="617" y="0"/>
-</item>
-<item historyLabel="BinarySearchST.java" index="6">
-<position info="not_deleted" x="919" y="0"/>
-</item>
-<item historyLabel="BinarySearchST.java" index="6">
-<position info="not_deleted" x="916" y="0"/>
-</item>
-<item historyLabel="BinarySearchST.java" index="6">
-<position info="not_deleted" x="825" y="0"/>
-</item>
-<item historyLabel="BinarySearchST.java" index="6">
-<position info="not_deleted" x="909" y="0"/>
-</item>
-<item historyLabel="RemoveDul.java" index="7">
-<position info="not_deleted" x="1601" y="0"/>
-</item>
-<item historyLabel="UniqueChar.java" index="8">
+<item historyLabel="UniqueChar.java" index="1">
 <position info="not_deleted" x="2456" y="0"/>
 </item>
-<item active="true" historyLabel="BinarySearchST.java" index="6">
-<position info="not_deleted" x="909" y="0"/>
+<item historyLabel="BinarySearchST.java" index="0">
+<position info="not_deleted" x="735" y="0"/>
+</item>
+<item historyLabel="RemoveDul.java" index="2">
+<position info="not_deleted" x="1601" y="0"/>
+</item>
+<item historyLabel="LinlkedTree.java" index="3">
+<position info="not_deleted" x="423" y="0"/>
+</item>
+<item historyLabel="BinaryTree.java" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="BinaryTree.java" index="4">
+<position info="not_deleted" x="3137" y="0"/>
+</item>
+<item historyLabel="BinaryTree.java" index="4">
+<position info="not_deleted" x="3217" y="0"/>
+</item>
+<item historyLabel="BinaryTree.java" index="4">
+<position info="not_deleted" x="3474" y="0"/>
+</item>
+<item historyLabel="BinaryTree.java" index="4">
+<position info="not_deleted" x="3345" y="0"/>
+</item>
+<item historyLabel="BinaryTree.java" index="4">
+<position info="not_deleted" x="3474" y="0"/>
+</item>
+<item historyLabel="BinaryTree.java" index="4">
+<position/>
+</item>
+<item historyLabel="BinaryTree.java" index="4">
+<position info="not_deleted" x="3471" y="0"/>
+</item>
+<item historyLabel="LinlkedTree.java" index="3">
+<position info="not_deleted" x="423" y="0"/>
+</item>
+<item historyLabel="LinlkedTree.java" index="3">
+<position/>
+</item>
+<item historyLabel="BinaryTree.java" index="4">
+<position info="not_deleted" x="2854" y="10"/>
+</item>
+<item historyLabel="LinlkedTree.java" index="3">
+<position/>
+</item>
+<item historyLabel="UniqueChar.java" index="5">
+<position info="not_deleted" x="2456" y="0"/>
+</item>
+<item historyLabel="BinaryTree.java" index="4">
+<position info="not_deleted" x="2854" y="10"/>
+</item>
+<item historyLabel="BinaryTree.java" index="4">
+<position info="not_deleted" x="2970" y="0"/>
+</item>
+<item historyLabel="BinaryTree.java" index="4">
+<position info="not_deleted" x="3257" y="0"/>
+</item>
+<item historyLabel="BinaryTree.java" index="4">
+<position info="not_deleted" x="3526" y="0"/>
+</item>
+<item historyLabel="LinlkedTree.java" index="3">
+<position info="not_deleted" x="800" y="0"/>
+</item>
+<item historyLabel="LinlkedTree.java" index="3">
+<position/>
+</item>
+<item historyLabel="LinlkedTree.java" index="3">
+<position info="not_deleted" x="793" y="0"/>
+</item>
+<item historyLabel="Node.java" index="6">
+<position info="not_deleted" x="210" y="12"/>
+</item>
+<item historyLabel="BinaryTree.java" index="4">
+<position info="not_deleted" x="3526" y="0"/>
+</item>
+<item historyLabel="LinlkedTree.java" index="3">
+<position info="not_deleted" x="793" y="0"/>
+</item>
+<item historyLabel="LinlkedTree.java" index="3">
+<position info="not_deleted" x="419" y="0"/>
+</item>
+<item historyLabel="BinaryTree.java" index="4">
+<position info="not_deleted" x="3474" y="0"/>
+</item>
+<item historyLabel="LinlkedTree.java" index="3">
+<position info="not_deleted" x="419" y="0"/>
+</item>
+<item historyLabel="UniqueChar.java" index="5">
+<position info="not_deleted" x="2456" y="0"/>
+</item>
+<item historyLabel="RemoveDul.java" index="2">
+<position info="not_deleted" x="1258" y="0"/>
+</item>
+<item historyLabel="BinaryTree.java" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="BinaryTree.java" index="4">
+<position info="not_deleted" x="1734" y="0"/>
+</item>
+<item historyLabel="BinaryTree.java" index="4">
+<position info="not_deleted" x="1332" y="0"/>
+</item>
+<item historyLabel="BinaryTree.java" index="4">
+<position info="not_deleted" x="1734" y="0"/>
+</item>
+<item historyLabel="BinaryTree.java" index="4">
+<position info="not_deleted" x="1731" y="0"/>
+</item>
+<item historyLabel="BinaryTree.java" index="4">
+<position info="not_deleted" x="1727" y="0"/>
+</item>
+<item historyLabel="BinaryTree.java" index="4">
+<position info="not_deleted" x="1648" y="0"/>
+</item>
+<item historyLabel="BinaryTree.java" index="4">
+<position info="not_deleted" x="1628" y="0"/>
+</item>
+<item historyLabel="IsBST.java" index="7">
+<position info="not_deleted" x="385" y="0"/>
+</item>
+<item historyLabel="LinlkedTree.java" index="3">
+<position info="not_deleted" x="426" y="77"/>
+</item>
+<item historyLabel="IsBST.java" index="7">
+<position info="not_deleted" x="385" y="0"/>
+</item>
+<item historyLabel="IsBST.java" index="7">
+<position info="not_deleted" x="376" y="0"/>
+</item>
+<item historyLabel="IsBST.java" index="7">
+<position info="not_deleted" x="377" y="0"/>
+</item>
+<item historyLabel="IsBST.java" index="7">
+<position info="not_deleted" x="340" y="0"/>
+</item>
+<item historyLabel="BinaryTree.java" index="4">
+<position info="not_deleted" x="1628" y="0"/>
+</item>
+<item historyLabel="BinaryTree.java" index="4">
+<position info="not_deleted" x="2114" y="0"/>
+</item>
+<item historyLabel="BinaryTree.java" index="4">
+<position info="not_deleted" x="2147" y="0"/>
+</item>
+<item active="true" historyLabel="IsBST.java" index="7">
+<position info="not_deleted" x="340" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -563,8 +562,8 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="131072">
-<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@1bad2e8"/>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="left"/>
 </trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
@@ -573,10 +572,23 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+<trimItem IMemento.internal.id="bottom"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LinlkedTree.java" tooltip="Chapter4/src/fourdot4/LinlkedTree.java">
+<persistable path="/Chapter4/src/fourdot4/LinlkedTree.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IsBST.java" tooltip="Chapter4/src/fourdot5/IsBST.java">
+<persistable path="/Chapter4/src/fourdot5/IsBST.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BinaryTree.java" tooltip="Chapter4/src/binarytree/BinaryTree.java">
+<persistable path="/Chapter4/src/binarytree/BinaryTree.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Node.java" tooltip="Chapter4/src/binarytree/Node.java">
+<persistable path="/Chapter4/src/binarytree/Node.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UniqueChar.java" tooltip="Chapter1/onedot1/UniqueChar.java">
 <persistable path="/Chapter1/onedot1/UniqueChar.java"/>
 </file>
@@ -609,18 +621,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Queue2.java" tooltip="Chapter3/src/threedot7/Queue2.java">
 <persistable path="/Chapter3/src/threedot7/Queue2.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="MyQueue.py" tooltip="Chapter3/src/threedot5/MyQueue.py">
-<persistable path="/Chapter3/src/threedot5/MyQueue.py"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AscendingStack.java" tooltip="Chapter3/src/ThreeDot6/AscendingStack.java">
-<persistable path="/Chapter3/src/ThreeDot6/AscendingStack.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ReplaceSpace.java" tooltip="Chapter1/onedot4/ReplaceSpace.java">
-<persistable path="/Chapter1/onedot4/ReplaceSpace.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Reverse.java" tooltip="Chapter2/src/twodot5/Reverse.java">
-<persistable path="/Chapter2/src/twodot5/Reverse.java"/>
 </file>
 </mruList>
 </workbench>
