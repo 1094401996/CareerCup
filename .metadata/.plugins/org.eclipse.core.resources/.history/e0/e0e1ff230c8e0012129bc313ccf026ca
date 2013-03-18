@@ -1,0 +1,88 @@
+package threedot1;
+
+public class BinarySearchST<Key extends Comparable<Key> , Value> {
+	private Key[] keys;
+	private Value[] values;
+	int N;
+	
+	public BinarySearchST(int capacity){
+		keys = (Key[])new Object[capacity];
+		values = (Value[]) new Object[capacity];
+	}
+	
+	public int size(){
+		return N;
+	}
+	
+	public int rank(Key key){
+		int low = 0;
+		int high = N - 1;
+		while(low <= high){
+			int mid = (low + high) /2;
+			int cmp = key.compareTo(keys[mid]);
+			if(cmp < 0 ){
+				high = mid - 1;
+			}
+			else if(cmp > 0){
+				low = mid + 1;
+			}else{
+				return mid;
+			}
+		}
+		return low;
+	}
+//	public int rank(Key key, int low, int high){
+//		if(high < low){
+//			return low;
+//		}
+//		int mid = (high + low)/2;
+//		int cmp = key.compareTo(keys[mid]);
+//		
+//		if(cmp < 0){
+//			return rank(key,low, mid -1 );
+//		}
+//		else if(cmp > 0){
+//			return rank(key, mid + 1, high);
+//		}else{
+//			return mid;
+//		}
+//		
+//	}
+	
+	public boolean isEmpty(){
+		return N == 0;
+	}
+	
+	public Value get(Key key){
+		if(isEmpty()){
+			return null;
+		}
+		int i = rank(key);
+		if(i < N && keys[i].compareTo(key) == 0){
+			return values[i];
+		}else
+			return null;
+	}
+	
+	public void put (Key key, Value val){
+		int i = rank(key);
+		if(i < N && keys[i].compareTo(key) == 0){
+			values[i] = val;
+			return ;
+		}
+		Key[] newkeyarray =  (Key[]) new Object[N + 1];
+		Value[] newvaluearray = (Value[]) new Object[N + 1];
+		for(int j = 0 ; j < i; j ++ ){
+			newkeyarray[j] = keys[j];
+			newvaluearray[j] =  values[j];
+		}
+		for(int j = N ; j > i ; j --){
+			newkeyarray[j] = keys[j - 1];
+			newvaluearray[j] = values[j - 1];	
+			}
+		
+		
+	}
+
+	
+}

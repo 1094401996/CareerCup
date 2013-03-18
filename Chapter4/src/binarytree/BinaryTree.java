@@ -14,20 +14,7 @@ public class BinaryTree {
 	public BinaryTree(int[]arr,boolean a){
 		root = buildMinBST(arr);
 	}
-	private Node buildMinBST(int[]arr){
-		return  creatMinBST(arr,0 , arr.length - 1);
-	}
-	private Node creatMinBST(int[]arr,int left, int right){
-			if(left > right){
-				return null;
-			}
-			int mid = (left + right)/2;
-			Node n = new Node(arr[mid]);
-			n.setLeft(creatMinBST(arr,left,mid - 1));
-			n.setRight(creatMinBST(arr,mid + 1,right));
-			return n;
-		
-	}
+	
 	
 	/**
 	 * 初始化二叉树
@@ -63,7 +50,20 @@ public class BinaryTree {
     	}
     }
 
-    
+    private Node buildMinBST(int[]arr){
+		return  creatMinBST(arr,0 , arr.length - 1);
+	}
+	private Node creatMinBST(int[]arr,int left, int right){
+			if(left > right){
+				return null;
+			}
+			int mid = (left + right)/2;
+			Node n = new Node(arr[mid]);
+			n.setLeft(creatMinBST(arr,left,mid - 1));
+			n.setRight(creatMinBST(arr,mid + 1,right));
+			return n;
+		
+	}
     public Node findNode(int element){
     	Node p = root;
     	while(p != null){
@@ -130,34 +130,51 @@ public class BinaryTree {
     	System.out.println();
     }
     //chapter 4.4 
-//    public ArrayList linlkedTree(Node p ){
-//    	if(p == null)
-//    		return null;
-//    	int H = getHeight(p);
-//    	ArrayList al = new ArrayList();
-//    	for(int i = 0; i < H + 1;i++){
-//    		al.add(new LinkedList());
-//    	}
-//    	Queue<Node> queue = new LinkedList<Node>();
-//    	queue.offer(p);
-//    	while(queue.size() > 0){
-//    		Node temp = queue.poll();
-//    		int h = getHeight(temp);
-//    	    al.get(h).add(temp.getElement());
-//    		if(temp.getLeft()!=null){
-//    			queue.offer(temp.getLeft());
-//    		}
-//    		if(temp.getRight() != null){
-//    			queue.offer(temp.getRight());
-//    		}
-//    		
-//    	}
-//    	return la;
-//    }
+    public LinkedList[] linlkedTree(Node p ){
+    	if(p == null)
+    		return null;
+    	int H = getHeight(p);
+//    	System.out.println(D+"hah" + getHeight(root));
+    	LinkedList[] ll = new LinkedList[H + 1];
+    	for(int i = 0 ; i < H + 1; i++){
+    		ll[i] = new LinkedList();
+    	}
+    	ArrayList<Node> array = new ArrayList<Node>();
+    	array.add(root);
+    	int cur = 0;
+    	int last = 1;
+    	int level = 0;
+    	while(cur < array.size()){
+    		last = array.size();//the new level begin
+    		while(cur < last){
+    			ll[level].add(array.get(cur));
+    			if(array.get(cur).getLeft()!= null){
+    				array.add((array.get(cur).getLeft()));
+    			}
+    			if(array.get(cur).getRight() != null){
+    				array.add((array.get(cur).getRight()));
+    			}
+    			cur++;
+    		}
+    		level++;
+    		
+    	}
+    	return ll;
+    }
     public int getHeight(Node node){
     	if (node == null)
     		return -1;
     	return Math.max(getHeight(node.getLeft()),getHeight(node.getRight())) + 1;
+    }
+    public int getDepth(Node node){
+    	
+    	if(node == null){
+    		return -1;
+    	}else{
+    		int left = getDepth(node.getLeft());
+    		int right = getDepth(node.getRight());
+    		return (left >right ? left :right) + 1;
+    	}
     }
     
     public boolean isBalanced1 (Node root){

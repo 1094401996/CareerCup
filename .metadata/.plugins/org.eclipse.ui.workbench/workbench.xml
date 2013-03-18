@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workbench progressCount="23" version="2.0">
 <workbenchAdvisor/>
-<window height="591" maximized="true" width="640" x="637" y="39">
+<window height="591" maximized="true" width="636" x="637" y="39">
 <fastViewData fastViewLocation="1024"/>
-<intro standby="true"/>
 <perspectiveBar>
 <itemSize x="160"/>
 </perspectiveBar>
@@ -36,31 +35,21 @@
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
-<part id="3"/>
-<part id="4"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AscendingStack.java" partName="AscendingStack.java" path="/home/gengchen/Desktop/github/CareerCup/Chapter3/src/threedot6/AscendingStack.java" title="AscendingStack.java" tooltip="Chapter3/src/threedot6/AscendingStack.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter3/src/threedot6/AscendingStack.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="13" selectionOffset="341" selectionTopPixel="0"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BinarySearchST.java" partName="BinarySearchST.java" path="/home/gengchen/Desktop/github/CareerCup/Algorithms Princeton Chapter3/src/threedot1/BinarySearchST.java" title="BinarySearchST.java" tooltip="Algorithms Princeton Chapter3/src/threedot1/BinarySearchST.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Algorithms Princeton Chapter3/src/threedot1/BinarySearchST.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="707" selectionTopPixel="463"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AnimalShelter.java" partName="AnimalShelter.java" path="/home/gengchen/Desktop/github/CareerCup/Chapter3/src/threedot7/AnimalShelter.java" title="AnimalShelter.java" tooltip="Chapter3/src/threedot7/AnimalShelter.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter3/src/threedot7/AnimalShelter.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="81" selectionOffset="605" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RemoveDul.java" partName="RemoveDul.java" path="/home/gengchen/Desktop/github/CareerCup/Chapter1/onedot3/RemoveDul.java" title="RemoveDul.java" tooltip="Chapter1/onedot3/RemoveDul.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter1/onedot3/RemoveDul.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1601" selectionTopPixel="461"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SLinkedList.java" partName="SLinkedList.java" path="/home/gengchen/Desktop/github/CareerCup/Chapter3/src/threedot7/SLinkedList.java" title="SLinkedList.java" tooltip="Chapter3/src/threedot7/SLinkedList.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter3/src/threedot7/SLinkedList.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SNode.java" partName="SNode.java" path="/home/gengchen/Desktop/github/CareerCup/Chapter3/src/threedot7/SNode.java" title="SNode.java" tooltip="Chapter3/src/threedot7/SNode.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter3/src/threedot7/SNode.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Queue1.java" partName="Queue1.java" path="/home/gengchen/Desktop/github/CareerCup/Chapter3/src/threedot7/Queue1.java" title="Queue1.java" tooltip="Chapter3/src/threedot7/Queue1.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter3/src/threedot7/Queue1.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UniqueChar.java" partName="UniqueChar.java" path="/home/gengchen/Desktop/github/CareerCup/Chapter1/onedot1/UniqueChar.java" title="UniqueChar.java" tooltip="Chapter1/onedot1/UniqueChar.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter1/onedot1/UniqueChar.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2456" selectionTopPixel="988"/>
 </editor>
 </editors>
 <views>
@@ -98,7 +87,7 @@
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
 <category IMemento.internal.id="Warnings"/>
-<category IMemento.internal.id="Errors"/>
+<category IMemento.internal.id="Warnings (13 items)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="232" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -107,6 +96,9 @@
 <visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
 </viewState>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
 </view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
 <viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="">
@@ -135,15 +127,6 @@
 <child filterId="org.eclipse.jdt.ui.PackageExplorer.SyntheticMembersFilter" isEnabled="true"/>
 </xmlDefinedFilters>
 </customFilters>
-</viewState>
-</view>
-<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
-<viewState/>
-</view>
-<view id="org.eclipse.ui.internal.introview" partName="Welcome">
-<viewState>
-<presentation currentPage="root" restore="true"/>
-<standbyPart/>
 </viewState>
 </view>
 <view id="org.eclipse.jdt.ui.SourceView" partName="Declaration"/>
@@ -269,13 +252,7 @@
 <view id="org.eclipse.jdt.ui.SourceView"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.jdt.ui.PackageExplorer"/>
-<fastViewBars>
-<fastViewBar fastViewLocation="131072" id="org.eclipse.ui.internal.ViewStack@1bad2e8" orientation="512" selectedTabId="org.eclipse.ui.internal.introview" style="0">
-<fastViews>
-<view id="org.eclipse.ui.internal.introview" ratio="0.3"/>
-</fastViews>
-</fastViewBar>
-</fastViewBars>
+<fastViewBars/>
 <layout>
 <mainWindow>
 <info folder="true" part="left">
@@ -291,7 +268,7 @@
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@1bad2e8" ratio="0.75" ratioLeft="975" ratioRight="325" relationship="2" relative="left">
-<folder appearance="2" expanded="0">
+<folder appearance="2" expanded="2">
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
@@ -426,79 +403,10 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter3/src/threedot7/SLinkedList.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter3/src/threedot7/SNode.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter3/src/threedot7/Queue1.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Algorithms Princeton Chapter3/src/threedot1/BinarySearchST.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter1/onedot3/RemoveDul.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter1/onedot1/UniqueChar.java"/>
 </editors>
-<item historyLabel="AnimalShelter.java" index="0">
-<position info="not_deleted" x="1172" y="0"/>
-</item>
-<item historyLabel="AnimalShelter.java" index="0">
-<position info="not_deleted" x="1198" y="0"/>
-</item>
-<item historyLabel="AnimalShelter.java" index="0">
-<position info="not_deleted" x="1223" y="0"/>
-</item>
-<item historyLabel="AnimalShelter.java" index="0">
-<position info="not_deleted" x="1225" y="0"/>
-</item>
-<item historyLabel="AnimalShelter.java" index="0">
-<position info="not_deleted" x="1286" y="0"/>
-</item>
-<item historyLabel="AnimalShelter.java" index="0">
-<position info="not_deleted" x="1501" y="0"/>
-</item>
-<item historyLabel="AnimalShelter.java" index="0">
-<position info="not_deleted" x="1367" y="0"/>
-</item>
-<item historyLabel="AnimalShelter.java" index="0">
-<position info="not_deleted" x="1501" y="0"/>
-</item>
-<item historyLabel="AnimalShelter.java" index="0">
-<position/>
-</item>
-<item historyLabel="AnimalShelter.java" index="0">
-<position info="not_deleted" x="1497" y="0"/>
-</item>
-<item historyLabel="AnimalShelter.java" index="0">
-<position info="not_deleted" x="838" y="0"/>
-</item>
-<item historyLabel="AnimalShelter.java" index="0">
-<position info="not_deleted" x="1346" y="0"/>
-</item>
-<item historyLabel="AnimalShelter.java" index="0">
-<position info="not_deleted" x="1528" y="0"/>
-</item>
-<item historyLabel="AnimalShelter.java" index="0">
-<position info="not_deleted" x="1632" y="0"/>
-</item>
-<item historyLabel="AnimalShelter.java" index="0">
-<position info="not_deleted" x="1599" y="0"/>
-</item>
-<item historyLabel="AnimalShelter.java" index="0">
-<position info="not_deleted" x="1795" y="0"/>
-</item>
-<item historyLabel="AnimalShelter.java" index="0">
-<position info="not_deleted" x="2068" y="0"/>
-</item>
-<item historyLabel="AnimalShelter.java" index="0">
-<position info="not_deleted" x="889" y="0"/>
-</item>
-<item historyLabel="AnimalShelter.java" index="0">
-<position info="not_deleted" x="2106" y="0"/>
-</item>
-<item historyLabel="AnimalShelter.java" index="0">
-<position info="not_deleted" x="2112" y="0"/>
-</item>
-<item historyLabel="AnimalShelter.java" index="0">
-<position info="not_deleted" x="2709" y="0"/>
-</item>
-<item historyLabel="AnimalShelter.java" index="0">
-<position info="not_deleted" x="2180" y="0"/>
-</item>
-<item historyLabel="AnimalShelter.java" index="0">
-<position info="not_deleted" x="2181" y="0"/>
-</item>
-<item historyLabel="AnimalShelter.java" index="0">
-<position info="not_deleted" x="2284" y="0"/>
-</item>
 <item historyLabel="AnimalShelter.java" index="0">
 <position info="not_deleted" x="2285" y="0"/>
 </item>
@@ -574,8 +482,80 @@
 <item historyLabel="Queue1.java" index="5">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item active="true" historyLabel="AnimalShelter.java" index="0">
+<item historyLabel="AnimalShelter.java" index="0">
+<position info="not_deleted" x="605" y="81"/>
+</item>
+<item historyLabel="BinarySearchST.java" index="6">
 <position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="BinarySearchST.java" index="6">
+<position info="not_deleted" x="100" y="0"/>
+</item>
+<item historyLabel="BinarySearchST.java" index="6">
+<position info="not_deleted" x="123" y="0"/>
+</item>
+<item historyLabel="BinarySearchST.java" index="6">
+<position info="not_deleted" x="147" y="0"/>
+</item>
+<item historyLabel="BinarySearchST.java" index="6">
+<position info="not_deleted" x="195" y="0"/>
+</item>
+<item historyLabel="BinarySearchST.java" index="6">
+<position info="not_deleted" x="196" y="0"/>
+</item>
+<item historyLabel="BinarySearchST.java" index="6">
+<position info="not_deleted" x="216" y="0"/>
+</item>
+<item historyLabel="BinarySearchST.java" index="6">
+<position info="not_deleted" x="237" y="0"/>
+</item>
+<item historyLabel="BinarySearchST.java" index="6">
+<position info="not_deleted" x="261" y="0"/>
+</item>
+<item historyLabel="BinarySearchST.java" index="6">
+<position info="not_deleted" x="284" y="0"/>
+</item>
+<item historyLabel="BinarySearchST.java" index="6">
+<position info="not_deleted" x="1060" y="0"/>
+</item>
+<item historyLabel="BinarySearchST.java" index="6">
+<position info="not_deleted" x="1010" y="0"/>
+</item>
+<item historyLabel="BinarySearchST.java" index="6">
+<position info="not_deleted" x="1057" y="0"/>
+</item>
+<item historyLabel="BinarySearchST.java" index="6">
+<position info="not_deleted" x="968" y="0"/>
+</item>
+<item historyLabel="BinarySearchST.java" index="6">
+<position info="not_deleted" x="619" y="0"/>
+</item>
+<item historyLabel="BinarySearchST.java" index="6">
+<position/>
+</item>
+<item historyLabel="BinarySearchST.java" index="6">
+<position info="not_deleted" x="617" y="0"/>
+</item>
+<item historyLabel="BinarySearchST.java" index="6">
+<position info="not_deleted" x="919" y="0"/>
+</item>
+<item historyLabel="BinarySearchST.java" index="6">
+<position info="not_deleted" x="916" y="0"/>
+</item>
+<item historyLabel="BinarySearchST.java" index="6">
+<position info="not_deleted" x="825" y="0"/>
+</item>
+<item historyLabel="BinarySearchST.java" index="6">
+<position info="not_deleted" x="909" y="0"/>
+</item>
+<item historyLabel="RemoveDul.java" index="7">
+<position info="not_deleted" x="1601" y="0"/>
+</item>
+<item historyLabel="UniqueChar.java" index="8">
+<position info="not_deleted" x="2456" y="0"/>
+</item>
+<item active="true" historyLabel="BinarySearchST.java" index="6">
+<position info="not_deleted" x="909" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -583,12 +563,8 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="left"/>
-</trimArea>
 <trimArea IMemento.internal.id="131072">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@1bad2e8"/>
-<trimItem IMemento.internal.id="org.eclipse.ui.editorss"/>
 </trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
@@ -597,11 +573,19 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
-<trimItem IMemento.internal.id="bottom"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UniqueChar.java" tooltip="Chapter1/onedot1/UniqueChar.java">
+<persistable path="/Chapter1/onedot1/UniqueChar.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RemoveDul.java" tooltip="Chapter1/onedot3/RemoveDul.java">
+<persistable path="/Chapter1/onedot3/RemoveDul.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BinarySearchST.java" tooltip="Algorithms Princeton Chapter3/src/threedot1/BinarySearchST.java">
+<persistable path="/Algorithms Princeton Chapter3/src/threedot1/BinarySearchST.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Queue1.java" tooltip="Chapter3/src/threedot7/Queue1.java">
 <persistable path="/Chapter3/src/threedot7/Queue1.java"/>
 </file>
@@ -637,15 +621,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Reverse.java" tooltip="Chapter2/src/twodot5/Reverse.java">
 <persistable path="/Chapter2/src/twodot5/Reverse.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="forward.java" tooltip="Chapter2/src/twodot5/forward.java">
-<persistable path="/Chapter2/src/twodot5/forward.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DeleteMiddle.java" tooltip="Chapter2/src/twodot3/DeleteMiddle.java">
-<persistable path="/Chapter2/src/twodot3/DeleteMiddle.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Ispalindrome.java" tooltip="Chapter2/src/twodot7/Ispalindrome.java">
-<persistable path="/Chapter2/src/twodot7/Ispalindrome.java"/>
 </file>
 </mruList>
 </workbench>

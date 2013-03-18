@@ -1,0 +1,14 @@
+package fourdot4;
+
+import java.util.LinkedList;
+
+import binarytree.BinaryTree;
+
+public class LinlkedTree {
+	public static void main(String[] args){
+		int [] data1 = {1,3,2,5,4,8,6};
+		BinaryTree mytree1 = new BinaryTree(data1);
+		LinkedList[] array =mytree1.linlkedTree(mytree1.getRoot());
+		System.out.println(array.length);
+	}
+}
