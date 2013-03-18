@@ -1,0 +1,15 @@
+package fourdot7;
+
+import binarytree.BinaryTree;
+import binarytree.Node;
+
+public class CommonAncestor {
+	public static void main(String[]args){
+		int [] data1 = {1,3,2,5,4,8,6};
+    	BinaryTree mytree1 = new BinaryTree(data1);
+    	Node p = mytree1.findNode(2);
+    	Node q = mytree1.findNode(6);
+    	Node ancester = mytree1.lowestCommonAncester(mytree1.getRoot(), p, q);
+    	System.out.println(ancester.getElement());
+	}
+}

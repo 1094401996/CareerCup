@@ -291,7 +291,25 @@ public class BinaryTree {
     	else
     		return lowestCommonAncesterHelper(root, p,q);
     }
-  
+  //返回root为根的树种包含p,q两个节点中节点的数目:0,1,2
+    public int LowestCommmonAncester(Node root,  Node p, Node q, Node ancestor){
+    	if(root == null )
+    	return 0;
+    	if(root == p || root == q)
+    		return 1;
+    	int LeftNo =   LowestCommmonAncester(root.getLeft(),p,q,ancestor);
+    	if(LeftNo == 2){
+    		return 2;
+    	}
+    	int RightNo =   LowestCommmonAncester(root.getRight(),p,q,ancestor);
+    	if(RightNo == 2){
+    		return 2;
+    	}
+    	if(LeftNo + RightNo == 2){
+    		ancestor  = root;
+    	}
+    	return LeftNo + RightNo;
+    }
     
    
     

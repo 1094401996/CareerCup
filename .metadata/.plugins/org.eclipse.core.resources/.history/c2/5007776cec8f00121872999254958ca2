@@ -253,7 +253,6 @@ public class BinaryTree {
     			return p;
     		}
     	}
-    	return p;
     }
     
     //如果只是binarytree
@@ -281,7 +280,7 @@ public class BinaryTree {
     	else if(is_p_left && !is_q_right){
     		return lowestCommonAncesterHelper(root.getLeft(),p,q);
     	}else{
-    		return lowestCommonAncesterHelper(root.getRight(),p,q);
+    		return lowestCommonAncesterHelper(root.geright(),p,q);
     	}
     }
     public Node lowestCommonAncester(Node root, Node p, Node q){
@@ -291,7 +290,6 @@ public class BinaryTree {
     	else
     		return lowestCommonAncesterHelper(root, p,q);
     }
-  
     
    
     

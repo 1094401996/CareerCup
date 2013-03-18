@@ -244,7 +244,7 @@ public class BinaryTree {
     	}
     	Node p = root;
     	while(p!=null){
-    		if(p.getElement() > n1.getElement() && p.getElement() > n2.getElement()){
+    		if(p.getElement() >n1.getElement() && p.getElement() > n2.getElement()){
     			p = p.getLeft();
     		}
     		else if((p.getElement() < n1.getElement() && p.getElement() < n2.getElement())){
@@ -253,46 +253,7 @@ public class BinaryTree {
     			return p;
     		}
     	}
-    	return p;
     }
     
-    //如果只是binarytree
-    private boolean isDecendent(Node root, Node p){
-    	if (root == null){
-    		return false;
-    	}
-    	if(root == p){
-    		return true;
-    	}
-    	return isDecendent(root.getLeft(),p) || isDecendent(root.getRight(),p);
-    }
-    private Node lowestCommonAncesterHelper(Node root, Node p, Node q){
-    	if(root == null)
-    	return null;
-    	
-    	boolean is_p_left = false;
-    	boolean is_q_right = false;
-    	is_p_left = isDecendent(root.getLeft(),p);
-    	is_q_right = isDecendent(root.getRight(),q);
-    	
-    	if((is_p_left && is_q_right)||(!is_p_left && !is_q_right)){
-    		return root;
-    	}
-    	else if(is_p_left && !is_q_right){
-    		return lowestCommonAncesterHelper(root.getLeft(),p,q);
-    	}else{
-    		return lowestCommonAncesterHelper(root.getRight(),p,q);
-    	}
-    }
-    public Node lowestCommonAncester(Node root, Node p, Node q){
-    	if(root == null){
-    		return null;
-    	}
-    	else
-    		return lowestCommonAncesterHelper(root, p,q);
-    }
-  
-    
-   
     
 }

@@ -253,7 +253,6 @@ public class BinaryTree {
     			return p;
     		}
     	}
-    	return p;
     }
     
     //如果只是binarytree
@@ -291,7 +290,6 @@ public class BinaryTree {
     	else
     		return lowestCommonAncesterHelper(root, p,q);
     }
-  
     
    
     
