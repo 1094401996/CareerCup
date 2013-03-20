@@ -6,7 +6,6 @@ import binarytree.BinaryTree;
  * http://blog.csdn.net/ssjhust123/article/details/7783935
  * @author gengchen
  * 自己写出的程序就是爽呀  ^_^
- * 根据一颗二叉树的preorder和inder重构这课树。。。。
  *
  */
 public class ReconstructBinaryTree {
