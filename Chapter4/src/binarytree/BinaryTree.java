@@ -1,5 +1,7 @@
 package binarytree;
-
+/**
+ * 定义：空二叉树的高度为-1，只有根节点的二叉树高度为0，根节点在0层，深度为0。
+ */
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
@@ -7,7 +9,9 @@ import java.util.Queue;
 public class BinaryTree {
 	private Node root;
 	
-
+	public BinaryTree(){
+		
+	}
 	public BinaryTree(int[]arr){
 		initTree(arr);
 	}
@@ -64,7 +68,33 @@ public class BinaryTree {
 			return n;
 		
 	}
-	
+	private int getIndex(int inorder[], int val){
+		int index = -1;
+		for(int i = 0 ; i < inorder.length; i++){
+			if(inorder[i] == val){
+			     index = i;
+			     break;
+			}
+		}
+		return index;
+	}
+	public void reConstruct(int[]preorder, int[] inorder){
+		int left = 0;
+		int right = preorder.length - 1;
+		int offset = 0;
+		root = reConstruct(preorder,  inorder, left, right, offset);
+	}
+	private Node reConstruct(int[]preorder, int[] inorder ,int left, int right, int offset){
+		if(left >  right)
+			return null;
+		int rootVal = preorder[left];
+		int index = getIndex(inorder,rootVal);
+		int i = index - offset;
+		Node node = new Node(rootVal);
+		node.setLeft(reConstruct(preorder,inorder, left + 1, left + i,offset));
+		node.setRight(reConstruct(preorder,inorder,left + 1 + i, right,index + 1));
+		return node;
+	}
 	public boolean isBST(){
 		return isBST(root);
 	}
@@ -99,6 +129,13 @@ public class BinaryTree {
     		}
     	}
     	return p;
+    }
+    
+    //count the number of nodes in a tree
+    public int NumOfNode(Node n){
+    	if(n == null)
+    		return 0;
+    	return NumOfNode(n.getLeft()) + NumOfNode(n.getRight()) + 1;
     }
     
     //works for the binary tree
@@ -367,8 +404,9 @@ public class BinaryTree {
     public static void main(String[] args){
     	int [] arr = {1,2,3,4,5,6};
     	BinaryTree bt = new BinaryTree(arr);
+    	System.out.println(bt.NumOfNode(bt.getRoot()));
     	bt.setRoot(30);
-    	System.out.println(bt.generalFindNode(8).getElement());
+    	System.out.println(bt.generalFindNode(6).getElement());
     	
     }
   
