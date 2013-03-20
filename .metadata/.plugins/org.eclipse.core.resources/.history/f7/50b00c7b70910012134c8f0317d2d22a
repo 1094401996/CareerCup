@@ -1,0 +1,13 @@
+package fourdot8;
+import binarytree.BinaryTree;
+
+
+public class foutdot8 {
+	public static void main(String [] args){
+		int [] arr1 = {5,3,4,7,8};
+		BinaryTree bt1 = new BinaryTree(arr1);
+		int [] arr2 = {};
+		BinaryTree bt2 = new BinaryTree(arr2);
+		System.out.println(bt1.subTree(bt2));
+	}
+}

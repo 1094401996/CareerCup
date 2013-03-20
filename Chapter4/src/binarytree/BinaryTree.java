@@ -84,6 +84,7 @@ public class BinaryTree {
 			return toLeft && toRight && isBST(x.getLeft()) && isBST(x.getRight());
 		}
 	}
+	//the method only works if the tree is the BST
     public Node findNode(int element){
     	Node p = root;
     	while(p != null){
@@ -98,6 +99,22 @@ public class BinaryTree {
     		}
     	}
     	return p;
+    }
+    
+    //works for the binary tree
+    public Node generalFindNode(int element){
+    	return generalFindNode(root, element);
+    }
+    private Node generalFindNode(Node x, int element){
+    	if(x == null){
+    		return null;
+    	}
+    	if(x.getElement() == element ){
+    		return x;
+    	}
+    	Node left = generalFindNode(x.getLeft(),element);
+    	Node right = generalFindNode(x.getRight(),element);
+    	return left == null ? right : left;
     }
     public Node getRoot(){
     	return root;
@@ -235,7 +252,44 @@ public class BinaryTree {
     	}
     	return true;
     }
+    //careercup 4.8
+   public  boolean subTree(BinaryTree bt2){
+    	Node n1 = this.getRoot();
+    	Node n2 = bt2.getRoot();
+    	return subTree(n1, n2);
+    }
+    private boolean subTree(Node n1, Node n2){
+    	boolean n1_is_null = (n1 == null);
+    	boolean n2_is_null = (n2 == null);
+    	if(n2_is_null){
+    		return true;
+    	}
+    	if(n1_is_null){
+    		return false;
+    	}
+    	if(n1.getElement() == n2.getElement()){
+    		if(match(n1,n2)){
+    			return match(n1,n2);
+    		}
+    	}
+    	return subTree(n1.getLeft(),n2) && subTree(n1.getRight(),n2);
+    }
+
+    boolean match(Node n1, Node n2){
+    	
+    	if(n2 == null ){
+    		return true;
+    	}
+    	if(n1 == null){
+    		return false;
+    	}
+    	if(n1.getElement() != n2.getElement()){
+    		return false;
+    	}
+    	return match(n1.getLeft(),n2.getLeft()) && match(n1.getRight(), n2.getRight());
+    }
     
+
     //careercup 4.7
     //如果是二察搜索树
     Node foundLowerstCommonNodeInBST(Node n1, Node n2){
@@ -291,8 +345,44 @@ public class BinaryTree {
     	else
     		return lowestCommonAncesterHelper(root, p,q);
     }
+    
+    
+    //optimal method
+    
+//    Result lowestCommAncesterHelperOptimal((Node root, Node p, Node q)){
+//    	if(root == null){
+//    		return null;
+//    	}
+//    	Result rl = lowestCommAncesterHelperOptimal(root.getLeft(),p,q);
+//    	if(rx.isAncestor){
+//    		return rx;
+//    	}
+//    	Result rr =  lowestCommAncesterHelperOptimal(root.getRight(),p,q);
+//    	if(rr.isAncestor){
+//    		return rr;
+//    	}
+//    	
+//    }
+    //just for test the instance method
+    public static void main(String[] args){
+    	int [] arr = {1,2,3,4,5,6};
+    	BinaryTree bt = new BinaryTree(arr);
+    	bt.setRoot(30);
+    	System.out.println(bt.generalFindNode(8).getElement());
+    	
+    }
   
     
    
     
+}
+
+class Result{
+	Node node;
+	boolean isAncestor;
+	
+	Result(Node n, boolean isAnc){
+		node = n;
+		isAncestor = isAnc;
+	}
 }
