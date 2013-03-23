@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="17" version="2.0">
+<workbench progressCount="19" version="2.0">
 <workbenchAdvisor/>
-<window height="591" maximized="true" width="753" x="569" y="86">
+<window height="591" maximized="true" width="749" x="650" y="107">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -34,6 +34,7 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
+<part id="2"/>
 </presentation>
 </folder>
 </info>
@@ -42,9 +43,13 @@
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter4/src/binarytree/BinaryTree.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="11" selectionOffset="1766" selectionTopPixel="1270"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ReconstructBinaryTree.java" partName="ReconstructBinaryTree.java" path="/home/gengchen/Desktop/github/CareerCup/Chapter4/src/classical_questions_in_binarytree/ReconstructBinaryTree.java" title="ReconstructBinaryTree.java" tooltip="Chapter4/src/classical_questions_in_binarytree/ReconstructBinaryTree.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ReconstructBinaryTree.java" partName="ReconstructBinaryTree.java" path="/home/gengchen/Desktop/github/CareerCup/Chapter4/src/classical_questions_in_binarytree/ReconstructBinaryTree.java" title="ReconstructBinaryTree.java" tooltip="Chapter4/src/classical_questions_in_binarytree/ReconstructBinaryTree.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter4/src/classical_questions_in_binarytree/ReconstructBinaryTree.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="212" selectionTopPixel="0"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="InsertBits.java" partName="InsertBits.java" path="/home/gengchen/Desktop/github/CareerCup/Chapter5/src/fivedot1/InsertBits.java" title="InsertBits.java" tooltip="Chapter5/src/fivedot1/InsertBits.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter5/src/fivedot1/InsertBits.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="252" selectionOffset="588" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -60,8 +65,9 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings (25 items)"/>
+<category IMemento.internal.id="Warnings (23 items)"/>
 <category IMemento.internal.id="Errors"/>
+<category IMemento.internal.id="Warnings"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="232" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -242,25 +248,36 @@
 <perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
-<view id="org.eclipse.jdt.ui.PackageExplorer"/>
-<view id="org.eclipse.ui.views.ProblemView"/>
-<view id="org.eclipse.jdt.ui.JavadocView"/>
-<view id="org.eclipse.jdt.ui.SourceView"/>
-<view id="org.eclipse.ui.console.ConsoleView"/>
-<view id="org.eclipse.ui.views.ContentOutline"/>
-<fastViewBars/>
+<fastViewBars>
+<fastViewBar fastViewLocation="1024" id="bottom" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="1">
+<fastViews>
+<view id="org.eclipse.ui.views.ProblemView" ratio="0.3"/>
+<view id="org.eclipse.jdt.ui.JavadocView" ratio="0.3"/>
+<view id="org.eclipse.jdt.ui.SourceView" ratio="0.3"/>
+<view id="org.eclipse.ui.console.ConsoleView" ratio="0.29738563"/>
+</fastViews>
+</fastViewBar>
+<fastViewBar fastViewLocation="16384" id="left" orientation="512" selectedTabId="org.eclipse.jdt.ui.PackageExplorer" style="1">
+<fastViews>
+<view id="org.eclipse.jdt.ui.PackageExplorer" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+<fastViewBar fastViewLocation="131072" id="right" orientation="512" selectedTabId="org.eclipse.ui.views.ContentOutline" style="1">
+<fastViews>
+<view id="org.eclipse.ui.views.ContentOutline" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+</fastViewBars>
 <layout>
 <mainWindow>
 <info folder="true" part="left">
-<folder activePageID="org.eclipse.jdt.ui.PackageExplorer" appearance="2" expanded="2">
-<page content="org.eclipse.jdt.ui.PackageExplorer" label="Package Explorer"/>
+<folder appearance="2" expanded="0">
+<page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.ui.navigator.ProjectExplorer" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.junit.ResultView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@1bad2e8" ratio="0.75" ratioLeft="975" ratioRight="325" relationship="2" relative="left">
@@ -271,32 +288,25 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.14742698" ratioLeft="106" ratioRight="613" relationship="2" relative="left"/>
+<info part="org.eclipse.ui.editorss" ratio="0.2255814" ratioLeft="291" ratioRight="999" relationship="2" relative="left"/>
 <info folder="true" part="bottom" ratio="0.74963397" ratioLeft="512" ratioRight="171" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
-<page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
-<page content="org.eclipse.jdt.ui.SourceView" label="Declaration"/>
-<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<folder appearance="2" expanded="0">
+<page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.ui.JavadocView" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.ui.SourceView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-<part id="2"/>
-<part id="3"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info folder="true" part="right" ratio="0.7497436" ratioLeft="731" ratioRight="244" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<folder appearance="2" expanded="0">
+<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
 <page content="org.eclipse.ui.texteditor.TemplatesView" label="LabelNotFound"/>
 <page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </mainWindow>
@@ -409,97 +419,8 @@
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter4/src/binarytree/BinaryTree.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter4/src/classical_questions_in_binarytree/ReconstructBinaryTree.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter5/src/fivedot1/InsertBits.java"/>
 </editors>
-<item historyLabel="ReconstructBinaryTree.java" index="1">
-<position info="not_deleted" x="303" y="0"/>
-</item>
-<item historyLabel="ReconstructBinaryTree.java" index="1">
-<position info="not_deleted" x="341" y="0"/>
-</item>
-<item historyLabel="ReconstructBinaryTree.java" index="1">
-<position info="not_deleted" x="402" y="0"/>
-</item>
-<item historyLabel="ReconstructBinaryTree.java" index="1">
-<position info="not_deleted" x="424" y="0"/>
-</item>
-<item historyLabel="ReconstructBinaryTree.java" index="1">
-<position info="not_deleted" x="429" y="0"/>
-</item>
-<item historyLabel="ReconstructBinaryTree.java" index="1">
-<position info="not_deleted" x="573" y="0"/>
-</item>
-<item historyLabel="ReconstructBinaryTree.java" index="1">
-<position info="not_deleted" x="577" y="0"/>
-</item>
-<item historyLabel="BinaryTree.java" index="0">
-<position info="not_deleted" x="2046" y="0"/>
-</item>
-<item historyLabel="BinaryTree.java" index="0">
-<position info="not_deleted" x="3962" y="7"/>
-</item>
-<item historyLabel="ReconstructBinaryTree.java" index="1">
-<position/>
-</item>
-<item historyLabel="BinaryTree.java" index="0">
-<position info="not_deleted" x="4279" y="0"/>
-</item>
-<item historyLabel="ReconstructBinaryTree.java" index="1">
-<position info="not_deleted" x="485" y="85"/>
-</item>
-<item historyLabel="BinaryTree.java" index="0">
-<position info="not_deleted" x="4036" y="7"/>
-</item>
-<item historyLabel="ReconstructBinaryTree.java" index="1">
-<position info="not_deleted" x="485" y="85"/>
-</item>
-<item historyLabel="ReconstructBinaryTree.java" index="1">
-<position/>
-</item>
-<item historyLabel="ReconstructBinaryTree.java" index="1">
-<position info="not_deleted" x="431" y="0"/>
-</item>
-<item historyLabel="BinaryTree.java" index="0">
-<position info="not_deleted" x="4036" y="7"/>
-</item>
-<item historyLabel="BinaryTree.java" index="0">
-<position info="not_deleted" x="2082" y="0"/>
-</item>
-<item historyLabel="ReconstructBinaryTree.java" index="1">
-<position info="not_deleted" x="580" y="0"/>
-</item>
-<item historyLabel="BinaryTree.java" index="0">
-<position info="not_deleted" x="2045" y="0"/>
-</item>
-<item historyLabel="ReconstructBinaryTree.java" index="1">
-<position info="not_deleted" x="320" y="0"/>
-</item>
-<item historyLabel="BinaryTree.java" index="0">
-<position info="not_deleted" x="1976" y="0"/>
-</item>
-<item historyLabel="ReconstructBinaryTree.java" index="1">
-<position info="not_deleted" x="320" y="0"/>
-</item>
-<item historyLabel="BinaryTree.java" index="0">
-<position info="not_deleted" x="1878" y="0"/>
-</item>
-<item historyLabel="BinaryTree.java" index="0">
-<position info="not_deleted" x="1903" y="4"/>
-</item>
-<item historyLabel="BinaryTree.java" index="0">
-<position info="not_deleted" x="1910" y="0"/>
-</item>
-<item historyLabel="BinaryTree.java" index="0">
-<position info="not_deleted" x="1916" y="5"/>
-</item>
-<item historyLabel="BinaryTree.java" index="0">
-<position info="not_deleted" x="1951" y="0"/>
-</item>
-<item historyLabel="BinaryTree.java" index="0">
-<position info="not_deleted" x="1933" y="7"/>
-</item>
-<item historyLabel="ReconstructBinaryTree.java" index="1">
-<position info="not_deleted" x="367" y="0"/>
-</item>
 <item historyLabel="BinaryTree.java" index="0">
 <position info="not_deleted" x="1518" y="20"/>
 </item>
@@ -557,8 +478,98 @@
 <item historyLabel="BinaryTree.java" index="0">
 <position info="not_deleted" x="1766" y="11"/>
 </item>
-<item active="true" historyLabel="ReconstructBinaryTree.java" index="1">
+<item historyLabel="ReconstructBinaryTree.java" index="1">
 <position info="not_deleted" x="212" y="0"/>
+</item>
+<item historyLabel="InsertBits.java" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="InsertBits.java" index="2">
+<position info="not_deleted" x="927" y="0"/>
+</item>
+<item historyLabel="InsertBits.java" index="2">
+<position info="not_deleted" x="933" y="0"/>
+</item>
+<item historyLabel="InsertBits.java" index="2">
+<position info="not_deleted" x="2146" y="0"/>
+</item>
+<item historyLabel="InsertBits.java" index="2">
+<position info="not_deleted" x="2635" y="0"/>
+</item>
+<item historyLabel="InsertBits.java" index="2">
+<position info="not_deleted" x="2485" y="0"/>
+</item>
+<item historyLabel="InsertBits.java" index="2">
+<position info="not_deleted" x="2635" y="0"/>
+</item>
+<item historyLabel="InsertBits.java" index="2">
+<position info="not_deleted" x="2632" y="0"/>
+</item>
+<item historyLabel="InsertBits.java" index="2">
+<position info="not_deleted" x="2103" y="0"/>
+</item>
+<item historyLabel="InsertBits.java" index="2">
+<position/>
+</item>
+<item historyLabel="InsertBits.java" index="2">
+<position/>
+</item>
+<item historyLabel="InsertBits.java" index="2">
+<position info="not_deleted" x="721" y="0"/>
+</item>
+<item historyLabel="InsertBits.java" index="2">
+<position info="not_deleted" x="1533" y="0"/>
+</item>
+<item historyLabel="InsertBits.java" index="2">
+<position info="not_deleted" x="1738" y="0"/>
+</item>
+<item historyLabel="InsertBits.java" index="2">
+<position info="not_deleted" x="1629" y="0"/>
+</item>
+<item historyLabel="InsertBits.java" index="2">
+<position info="not_deleted" x="1226" y="0"/>
+</item>
+<item historyLabel="InsertBits.java" index="2">
+<position info="not_deleted" x="1157" y="0"/>
+</item>
+<item historyLabel="InsertBits.java" index="2">
+<position info="not_deleted" x="1722" y="0"/>
+</item>
+<item historyLabel="InsertBits.java" index="2">
+<position info="not_deleted" x="1226" y="0"/>
+</item>
+<item historyLabel="InsertBits.java" index="2">
+<position info="not_deleted" x="1225" y="0"/>
+</item>
+<item historyLabel="InsertBits.java" index="2">
+<position info="not_deleted" x="1410" y="0"/>
+</item>
+<item historyLabel="InsertBits.java" index="2">
+<position info="not_deleted" x="1714" y="0"/>
+</item>
+<item historyLabel="InsertBits.java" index="2">
+<position info="not_deleted" x="1632" y="0"/>
+</item>
+<item historyLabel="InsertBits.java" index="2">
+<position info="not_deleted" x="1654" y="4"/>
+</item>
+<item historyLabel="InsertBits.java" index="2">
+<position info="not_deleted" x="1632" y="0"/>
+</item>
+<item historyLabel="InsertBits.java" index="2">
+<position info="not_deleted" x="983" y="0"/>
+</item>
+<item historyLabel="InsertBits.java" index="2">
+<position info="not_deleted" x="1654" y="4"/>
+</item>
+<item historyLabel="InsertBits.java" index="2">
+<position info="not_deleted" x="1049" y="0"/>
+</item>
+<item historyLabel="InsertBits.java" index="2">
+<position info="not_deleted" x="1411" y="0"/>
+</item>
+<item active="true" historyLabel="InsertBits.java" index="2">
+<position info="not_deleted" x="2006" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -584,6 +595,9 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="InsertBits.java" tooltip="Chapter5/src/fivedot1/InsertBits.java">
+<persistable path="/Chapter5/src/fivedot1/InsertBits.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ReconstructBinaryTree.java" tooltip="Chapter4/src/classical_questions_in_binarytree/ReconstructBinaryTree.java">
 <persistable path="/Chapter4/src/classical_questions_in_binarytree/ReconstructBinaryTree.java"/>
 </file>
@@ -622,12 +636,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BinarySearchST.java" tooltip="Algorithms Princeton Chapter3/src/threedot1/BinarySearchST.java">
 <persistable path="/Algorithms Princeton Chapter3/src/threedot1/BinarySearchST.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Queue1.java" tooltip="Chapter3/src/threedot7/Queue1.java">
-<persistable path="/Chapter3/src/threedot7/Queue1.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SNode.java" tooltip="Chapter3/src/threedot7/SNode.java">
-<persistable path="/Chapter3/src/threedot7/SNode.java"/>
 </file>
 </mruList>
 </workbench>

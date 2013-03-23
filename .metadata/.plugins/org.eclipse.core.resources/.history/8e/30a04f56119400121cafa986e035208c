@@ -1,0 +1,15 @@
+package fivedot2;
+
+public class DoubleRepresentation {
+	public static void main(String[] args){
+		double
+	}
+	
+	public static String doublerepresentation(double  num){
+		if (num >= 1 || num <= 0){
+			return "ERRFOR";
+		}
+		
+	}
+
+}
