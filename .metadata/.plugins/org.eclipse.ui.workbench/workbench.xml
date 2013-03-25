@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="18" version="2.0">
+<workbench progressCount="15" version="2.0">
 <workbenchAdvisor/>
-<window height="591" maximized="true" width="737" x="494" y="67">
+<window height="591" maximized="true" width="733" x="494" y="67">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -15,11 +15,11 @@
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="120" y="30"/>
 <coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="76" y="30"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="76" y="30"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="68" y="30"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="124" y="30"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.python.pydev.editor.PythonEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -31,10 +31,16 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
 </folder>
 </info>
 </editorArea>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Same1Bit.java" partName="Same1Bit.java" path="/home/gengchen/Desktop/github/CareerCup/Chapter5/src/fivedot3/Same1Bit.java" title="Same1Bit.java" tooltip="Chapter5/src/fivedot3/Same1Bit.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter5/src/fivedot3/Same1Bit.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="456" selectionTopPixel="0"/>
+</editor>
 </editors>
 <views>
 <view id="org.eclipse.debug.ui.ExpressionView" partName="Expressions">
@@ -49,9 +55,8 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings (16 items)"/>
 <category IMemento.internal.id="Errors"/>
-<category IMemento.internal.id="Warnings"/>
+<category IMemento.internal.id="Warnings (13 items)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="232" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -117,7 +122,7 @@
 </view>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 </views>
-<perspectives activePart="org.eclipse.ui.console.ConsoleView" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.ui.internal.ide.application.ResourcePerspective" id="org.eclipse.ui.resourcePerspective" label="Resource"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -285,7 +290,7 @@
 </folder>
 </info>
 <info folder="true" part="right" ratio="0.7497436" ratioLeft="731" ratioRight="244" relationship="2" relative="org.eclipse.ui.editorss">
-<folder appearance="2" expanded="0">
+<folder appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
 <page content="org.eclipse.ui.texteditor.TemplatesView" label="LabelNotFound"/>
 <page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
@@ -381,7 +386,90 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter5/src/fivedot3/Same1Bit.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter5/src/fivedot1/InsertBits.java"/>
+</editors>
+<item historyLabel="Same1Bit.java" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Same1Bit.java" index="0">
+<position/>
+</item>
+<item historyLabel="Same1Bit.java" index="0">
+<position/>
+</item>
+<item historyLabel="Same1Bit.java" index="0">
+<position info="not_deleted" x="502" y="0"/>
+</item>
+<item historyLabel="InsertBits.java" index="1">
+<position info="not_deleted" x="2011" y="624"/>
+</item>
+<item historyLabel="Same1Bit.java" index="0">
+<position info="not_deleted" x="1112" y="0"/>
+</item>
+<item historyLabel="Same1Bit.java" index="0">
+<position info="not_deleted" x="1742" y="0"/>
+</item>
+<item historyLabel="Same1Bit.java" index="0">
+<position info="not_deleted" x="1112" y="0"/>
+</item>
+<item historyLabel="Same1Bit.java" index="0">
+<position info="not_deleted" x="1100" y="0"/>
+</item>
+<item historyLabel="Same1Bit.java" index="0">
+<position info="not_deleted" x="2360" y="0"/>
+</item>
+<item historyLabel="Same1Bit.java" index="0">
+<position info="not_deleted" x="1100" y="0"/>
+</item>
+<item historyLabel="Same1Bit.java" index="0">
+<position info="not_deleted" x="523" y="0"/>
+</item>
+<item historyLabel="Same1Bit.java" index="0">
+<position info="not_deleted" x="529" y="0"/>
+</item>
+<item historyLabel="Same1Bit.java" index="0">
+<position info="not_deleted" x="829" y="0"/>
+</item>
+<item historyLabel="Same1Bit.java" index="0">
+<position info="not_deleted" x="1388" y="0"/>
+</item>
+<item historyLabel="Same1Bit.java" index="0">
+<position info="not_deleted" x="1404" y="0"/>
+</item>
+<item historyLabel="Same1Bit.java" index="0">
+<position info="not_deleted" x="1555" y="0"/>
+</item>
+<item historyLabel="Same1Bit.java" index="0">
+<position info="not_deleted" x="2360" y="0"/>
+</item>
+<item historyLabel="Same1Bit.java" index="0">
+<position info="not_deleted" x="2357" y="0"/>
+</item>
+<item historyLabel="Same1Bit.java" index="0">
+<position info="not_deleted" x="1547" y="0"/>
+</item>
+<item historyLabel="Same1Bit.java" index="0">
+<position info="not_deleted" x="730" y="0"/>
+</item>
+<item historyLabel="Same1Bit.java" index="0">
+<position info="not_deleted" x="733" y="0"/>
+</item>
+<item historyLabel="Same1Bit.java" index="0">
+<position/>
+</item>
+<item historyLabel="Same1Bit.java" index="0">
+<position info="not_deleted" x="1222" y="0"/>
+</item>
+<item historyLabel="Same1Bit.java" index="0">
+<position info="not_deleted" x="360" y="0"/>
+</item>
+<item active="true" historyLabel="Same1Bit.java" index="0">
+<position info="not_deleted" x="620" y="0"/>
+</item>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -401,6 +489,12 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="InsertBits.java" tooltip="Chapter5/src/fivedot1/InsertBits.java">
+<persistable path="/Chapter5/src/fivedot1/InsertBits.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Same1Bit.java" tooltip="Chapter5/src/fivedot3/Same1Bit.java">
+<persistable path="/Chapter5/src/fivedot3/Same1Bit.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="graph.png" tooltip="Chapter4/src/fourdot2/graph.png">
 <persistable path="/Chapter4/src/fourdot2/graph.png"/>
 </file>
@@ -431,17 +525,11 @@
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="fivedot4.java" tooltip="Chapter5/src/fivedot4.java">
 <persistable path="/Chapter5/src/fivedot4.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Same1Bit.java" tooltip="Chapter5/src/fivedot3/Same1Bit.java">
-<persistable path="/Chapter5/src/fivedot3/Same1Bit.java"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DoubleRepresentation.java" tooltip="Chapter5/src/fivedot2/DoubleRepresentation.java">
 <persistable path="/Chapter5/src/fivedot2/DoubleRepresentation.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Tower.java" tooltip="Chapter3/src/threedot4/Tower.java">
 <persistable path="/Chapter3/src/threedot4/Tower.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="InsertBits.java" tooltip="Chapter5/src/fivedot1/InsertBits.java">
-<persistable path="/Chapter5/src/fivedot1/InsertBits.java"/>
 </file>
 </mruList>
 </workbench>
