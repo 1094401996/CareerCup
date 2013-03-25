@@ -1,0 +1,19 @@
+package fourdot2;
+
+import Graph.Digraph;
+import Graph.DirectedDFS;
+
+public class IfConnected {
+	public static void main(String[] args) throws Exception{
+		int [] data = {13,22,4,2,2,3,3,2,6,0,0,1,2,0,11,12,12,9,9,10,9,11,8,9,10,12,11,4,4,3,3,5,7,8,8,7,5,4,0,5,6,4,6,9,7,5};
+		Digraph dg = new Digraph(data);
+		int source = 12;
+		DirectedDFS reachable = new DirectedDFS(dg,0);
+		int destination = 0;
+		System.out.println(reachable.hasPathTo(0));
+		for(int i : reachable.pathTo(destination)){
+			System.out.print(i + "- > ");
+		}
+		System.out.println(source);
+	}
+}

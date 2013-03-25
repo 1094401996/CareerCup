@@ -1,0 +1,21 @@
+package Graph;
+
+import java.util.LinkedList;
+
+public class Digraph {
+	private final int V;
+	private int E;
+	private LinkedList<Integer> [] adj;
+	
+	@SuppressWarnings("unchecked")
+	public Digraph(int V){
+		this.V = V;
+		this.E = 0;
+		adj = (LinkedList<Integer>[] ) new LinkedList[V];
+		
+		for(int v = 0 ; v< V; v++){
+			adj[v] = new LinkedList<Integer>();
+		}
+	}
+	
+}
