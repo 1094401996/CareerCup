@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="14" version="2.0">
+<workbench progressCount="18" version="2.0">
 <workbenchAdvisor/>
-<window height="591" maximized="true" width="741" x="620" y="79">
+<window height="591" maximized="true" width="737" x="494" y="67">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -15,11 +15,11 @@
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="120" y="30"/>
 <coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="76" y="30"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="76" y="30"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="124" y="30"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="68" y="30"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.python.pydev.editor.PythonEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -31,31 +31,10 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-<part id="2"/>
-<part id="3"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Graph.java" partName="Graph.java" path="/home/gengchen/Desktop/github/CareerCup/Chapter4/src/Graph/Graph.java" title="Graph.java" tooltip="Chapter4/src/Graph/Graph.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter4/src/Graph/Graph.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="462" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BreadthFirstPaths.java" partName="BreadthFirstPaths.java" path="/home/gengchen/Desktop/github/CareerCup/Chapter4/src/Graph/BreadthFirstPaths.java" title="BreadthFirstPaths.java" tooltip="Chapter4/src/Graph/BreadthFirstPaths.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter4/src/Graph/BreadthFirstPaths.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="494" selectionTopPixel="159"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DepthFirstPaths.java" partName="DepthFirstPaths.java" path="/home/gengchen/Desktop/github/CareerCup/Chapter4/src/Graph/DepthFirstPaths.java" title="DepthFirstPaths.java" tooltip="Chapter4/src/Graph/DepthFirstPaths.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter4/src/Graph/DepthFirstPaths.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="155" selectionTopPixel="6"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DepthFirstSearch.java" partName="DepthFirstSearch.java" path="/home/gengchen/Desktop/github/CareerCup/Chapter4/src/Graph/DepthFirstSearch.java" title="DepthFirstSearch.java" tooltip="Chapter4/src/Graph/DepthFirstSearch.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter4/src/Graph/DepthFirstSearch.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="291" selectionTopPixel="36"/>
-</editor>
 </editors>
 <views>
 <view id="org.eclipse.debug.ui.ExpressionView" partName="Expressions">
@@ -64,11 +43,15 @@
 <view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
 <viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
 </view>
+<view id="org.eclipse.debug.ui.DebugView" partName="Debug">
+<viewState/>
+</view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
+<category IMemento.internal.id="Warnings (16 items)"/>
 <category IMemento.internal.id="Errors"/>
-<category IMemento.internal.id="Warnings (21 items)"/>
+<category IMemento.internal.id="Warnings"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="232" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -77,12 +60,6 @@
 <visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
 </viewState>
-</view>
-<view id="org.eclipse.debug.ui.DebugView" partName="Debug">
-<viewState/>
-</view>
-<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
-<viewState/>
 </view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
 <viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="">
@@ -113,6 +90,9 @@
 </customFilters>
 </viewState>
 </view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
+</view>
 <view id="org.eclipse.debug.ui.BreakpointView" partName="Breakpoints">
 <viewState/>
 </view>
@@ -137,7 +117,7 @@
 </view>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.ui.console.ConsoleView" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.ui.internal.ide.application.ResourcePerspective" id="org.eclipse.ui.resourcePerspective" label="Resource"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -256,9 +236,14 @@
 <view id="org.eclipse.jdt.ui.JavadocView"/>
 <view id="org.eclipse.jdt.ui.SourceView"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
-<view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.jdt.ui.PackageExplorer"/>
-<fastViewBars/>
+<fastViewBars>
+<fastViewBar fastViewLocation="131072" id="right" orientation="512" selectedTabId="org.eclipse.ui.views.ContentOutline" style="0">
+<fastViews>
+<view id="org.eclipse.ui.views.ContentOutline" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+</fastViewBars>
 <layout>
 <mainWindow>
 <info folder="true" part="left">
@@ -282,7 +267,7 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.2255814" ratioLeft="291" ratioRight="999" relationship="2" relative="left"/>
-<info folder="true" part="bottom" ratio="0.74963397" ratioLeft="512" ratioRight="171" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="bottom" ratio="0.72104406" ratioLeft="442" ratioRight="171" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
@@ -300,13 +285,11 @@
 </folder>
 </info>
 <info folder="true" part="right" ratio="0.7497436" ratioLeft="731" ratioRight="244" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<folder appearance="2" expanded="0">
+<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
 <page content="org.eclipse.ui.texteditor.TemplatesView" label="LabelNotFound"/>
 <page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </mainWindow>
@@ -398,121 +381,12 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory>
-<editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter4/src/Graph/Graph.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter4/src/Graph/BreadthFirstPaths.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter4/src/Graph/DepthFirstPaths.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter4/src/Graph/DepthFirstSearch.java"/>
-</editors>
-<item historyLabel="Graph.java" index="0">
-<position info="not_deleted" x="975" y="0"/>
-</item>
-<item historyLabel="BreadthFirstPaths.java" index="1">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Graph.java" index="0">
-<position info="not_deleted" x="606" y="0"/>
-</item>
-<item historyLabel="DepthFirstPaths.java" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="DepthFirstSearch.java" index="3">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Graph.java" index="0">
-<position info="not_deleted" x="606" y="0"/>
-</item>
-<item historyLabel="DepthFirstPaths.java" index="2">
-<position info="not_deleted" x="230" y="0"/>
-</item>
-<item historyLabel="DepthFirstSearch.java" index="3">
-<position info="not_deleted" x="273" y="0"/>
-</item>
-<item historyLabel="DepthFirstPaths.java" index="2">
-<position info="not_deleted" x="155" y="0"/>
-</item>
-<item historyLabel="DepthFirstSearch.java" index="3">
-<position info="not_deleted" x="291" y="0"/>
-</item>
-<item historyLabel="DepthFirstPaths.java" index="2">
-<position info="not_deleted" x="155" y="0"/>
-</item>
-<item historyLabel="BreadthFirstPaths.java" index="1">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="BreadthFirstPaths.java" index="1">
-<position info="not_deleted" x="144" y="0"/>
-</item>
-<item historyLabel="BreadthFirstPaths.java" index="1">
-<position info="not_deleted" x="168" y="0"/>
-</item>
-<item historyLabel="BreadthFirstPaths.java" index="1">
-<position info="not_deleted" x="615" y="0"/>
-</item>
-<item historyLabel="DepthFirstSearch.java" index="3">
-<position info="not_deleted" x="291" y="0"/>
-</item>
-<item historyLabel="BreadthFirstPaths.java" index="1">
-<position info="not_deleted" x="615" y="0"/>
-</item>
-<item historyLabel="BreadthFirstPaths.java" index="1">
-<position info="not_deleted" x="414" y="0"/>
-</item>
-<item historyLabel="BreadthFirstPaths.java" index="1">
-<position info="not_deleted" x="427" y="0"/>
-</item>
-<item historyLabel="BreadthFirstPaths.java" index="1">
-<position info="not_deleted" x="517" y="0"/>
-</item>
-<item historyLabel="BreadthFirstPaths.java" index="1">
-<position info="not_deleted" x="606" y="0"/>
-</item>
-<item historyLabel="Graph.java" index="0">
-<position info="not_deleted" x="1023" y="17"/>
-</item>
-<item historyLabel="DepthFirstSearch.java" index="3">
-<position info="not_deleted" x="291" y="0"/>
-</item>
-<item historyLabel="BreadthFirstPaths.java" index="1">
-<position info="not_deleted" x="606" y="0"/>
-</item>
-<item historyLabel="BreadthFirstPaths.java" index="1">
-<position info="not_deleted" x="554" y="0"/>
-</item>
-<item historyLabel="BreadthFirstPaths.java" index="1">
-<position info="not_deleted" x="672" y="0"/>
-</item>
-<item historyLabel="BreadthFirstPaths.java" index="1">
-<position info="not_deleted" x="904" y="0"/>
-</item>
-<item historyLabel="BreadthFirstPaths.java" index="1">
-<position info="not_deleted" x="772" y="0"/>
-</item>
-<item historyLabel="BreadthFirstPaths.java" index="1">
-<position info="not_deleted" x="799" y="0"/>
-</item>
-<item historyLabel="BreadthFirstPaths.java" index="1">
-<position info="not_deleted" x="801" y="0"/>
-</item>
-<item historyLabel="BreadthFirstPaths.java" index="1">
-<position info="not_deleted" x="901" y="0"/>
-</item>
-<item historyLabel="BreadthFirstPaths.java" index="1">
-<position info="not_deleted" x="494" y="0"/>
-</item>
-<item active="true" historyLabel="Graph.java" index="0">
-<position info="not_deleted" x="1023" y="17"/>
-</item>
-</navigationHistory>
+<navigationHistory/>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="left"/>
-</trimArea>
 <trimArea IMemento.internal.id="131072">
 <trimItem IMemento.internal.id="right"/>
 </trimArea>
@@ -523,11 +397,22 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
-<trimItem IMemento.internal.id="bottom"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="graph.png" tooltip="Chapter4/src/fourdot2/graph.png">
+<persistable path="/Chapter4/src/fourdot2/graph.png"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IfConnected.java" tooltip="Chapter4/src/fourdot2/IfConnected.java">
+<persistable path="/Chapter4/src/fourdot2/IfConnected.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DirectedDFS.java" tooltip="Chapter4/src/Graph/DirectedDFS.java">
+<persistable path="/Chapter4/src/Graph/DirectedDFS.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Digraph.java" tooltip="Chapter4/src/Graph/Digraph.java">
+<persistable path="/Chapter4/src/Graph/Digraph.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DepthFirstSearch.java" tooltip="Chapter4/src/Graph/DepthFirstSearch.java">
 <persistable path="/Chapter4/src/Graph/DepthFirstSearch.java"/>
 </file>
@@ -557,21 +442,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="InsertBits.java" tooltip="Chapter5/src/fivedot1/InsertBits.java">
 <persistable path="/Chapter5/src/fivedot1/InsertBits.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ReconstructBinaryTree.java" tooltip="Chapter4/src/classical_questions_in_binarytree/ReconstructBinaryTree.java">
-<persistable path="/Chapter4/src/classical_questions_in_binarytree/ReconstructBinaryTree.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BinaryTree.java" tooltip="Chapter4/src/binarytree/BinaryTree.java">
-<persistable path="/Chapter4/src/binarytree/BinaryTree.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="foutdot8.java" tooltip="Chapter4/src/fourdot8/foutdot8.java">
-<persistable path="/Chapter4/src/fourdot8/foutdot8.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MinHeightTree.java" tooltip="Chapter4/src/fourdot3/MinHeightTree.java">
-<persistable path="/Chapter4/src/fourdot3/MinHeightTree.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IsBalanced.java" tooltip="Chapter4/src/fourdot1/IsBalanced.java">
-<persistable path="/Chapter4/src/fourdot1/IsBalanced.java"/>
 </file>
 </mruList>
 </workbench>

@@ -1,0 +1,73 @@
+package fivedot3;
+/**
+ * Given a positive integer, print the next smallest and the next largest number that have the same number 
+ * of 1 bits in their binary representation.
+ * @author gengchen
+ *
+ */
+
+public class Same1Bit {
+	
+	public static void main(String[] args){
+		System.out.println(Integer.toBinaryString(getNextGreater(13948)));
+	}
+	public static int getNextGreater(int n){
+		int c = n;
+		int c0 = 0;
+		int c1 = 0;
+		
+		while(((c & 1) == 0) &&(c != 0)){
+			c0++;
+			c >>= 1;
+		}
+		while((c & 1 ) == 1){
+			c1 ++;
+			c >>= 1;
+		}
+		if(c0 + c1 == 31 || c0 + c1 == 0){
+			return -1;
+		}
+		
+		int p = c0 + c1;
+		
+		n = clearBit(n,p);
+		n = clearBitsIthrough0(n,p);
+		n = setBitsIthrough0(n,c1 - 1);
+		return n;
+	}
+	
+	public static int getBit(int num,int i){
+		int mask = 1 << i;
+		return (mask & num) >> i;
+	}
+	public static int setBit(int num, int i){ 
+		int mask = 1 << i;
+		return mask | num;
+	}
+
+	public static int clearBit(int num ,int i){
+		int mask = ~(1 << i);
+		return mask & num;
+	}
+	
+	public static int clearBitsMSBthroughI(int num, int i){
+		int mask = ( 1 << i ) - 1;
+		return num & mask;
+	}
+	
+	public static int clearBitsIthrough0(int num, int i){
+		int mask = ~((1 << (i + 1)) -1 );
+		return mask & num;
+	}
+	public static int setBitsIthrough0(int num, int i){
+		int mask = (1 << ( i + 1)) - 1;
+		return mask | num;
+	}
+	public static int updateBit(int num , int i , int v){
+		int mask = ~(1 << i);
+		return (num & mask) | (v << i);
+		
+	}
+}
+
+
