@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Copy element &apos;UniqueChar.java&apos; to &apos;Chapter1/onedot1&apos;&#x0A;- Original project: &apos;Chapter1&apos;&#x0A;- Destination element: &apos;Chapter1/onedot1&apos;&#x0A;- Original element: &apos;UniqueChar.java&apos;" description="Copy compilation unit" destination="/onedot1" element1="/onedot1&lt;{UniqueChar.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1363402984442" units="1" version="1.0"/>
-</session>
