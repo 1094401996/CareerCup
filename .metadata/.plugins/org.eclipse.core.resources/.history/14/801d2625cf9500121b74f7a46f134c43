@@ -1,0 +1,50 @@
+package onedot3;
+//鍚愪笅绯燂紝鐢变簬string锛宻tringbuffer锛宑har[]鐨勫熀鏈琷ava鎿嶄綔涓嶇啛锛屽湪杩欓涓婃氮璐逛簡澶鐨勬椂闂淬�绗竴娆℃劅鍒癈鏄湡鏂逛究銆傘�銆傘�
+/*
+* Design an algorithm and write code to remove the duplicate characters in a string without
+* using any additional buffer. NOTE: One or two additional variables are fine.
+* An extra copy of the array is not.
+*/
+public class RemoveDul{
+    public static void main(String[] args){
+        RemoveDul q = new RemoveDul();
+        StringBuffer[] strings ={
+            new StringBuffer("abcdddg"),
+            new StringBuffer("aabbccddeeffgghhiijjkkllmmnn"),
+            new StringBuffer("abcdefgabcdefg"),
+            new StringBuffer("aaaaaaa"),
+            new StringBuffer("t"),
+            new StringBuffer("ababababababa"),
+            new StringBuffer("12 32 9 ' e.g e' f"),
+            new StringBuffer(),
+    };
+        for (StringBuffer str : strings){
+            q.DeleteDuplicate1(str);
+            System.out.println(str);
+        }
+    }
+    public void DeleteDuplicate1(StringBuffer str){
+        if (str == null)
+        return ;
+        int len = str.length();
+        if ((len == 0) || (len ==1))
+            return ;
+        int tail = 0;
+        for ( int j = 1; j < len; j++){
+            int i = tail;
+            boolean dul = false;
+            while (i >= 0){
+                if (str.charAt(i) == str.charAt(j)){
+                    dul = true;
+                    break;
+                }
+                i--;
+            }   
+            if (dul == false)
+            str.setCharAt(++tail,str.charAt(j));
+        }
+        if(tail == len -1)
+        return ;
+        str.delete(tail+1, len);
+    }
+}
