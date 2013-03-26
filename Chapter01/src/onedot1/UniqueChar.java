@@ -80,5 +80,5 @@ public class UniqueChar {
         data[right] = data[i+1];
         data[i+1] = temp;
         return i+1;
-        }
-    }
+     }
+  }

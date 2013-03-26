@@ -1,0 +1,60 @@
+package sortingAlgorithms;
+
+public class QuickSort<E extends Comparable<E>> {
+	private E[] data;
+	
+	public void sort(E[] e){
+		this.data = e;
+		quicksort(data, 0 , data.length - 1);
+	}
+	
+	private void quicksort(E[] data, int left, int right){
+		if(right > left){
+			partition(data,left, right);
+			int pivotindex = (left + right) / 2;
+			quicksort(data, left, pivot - 1);
+			quicksort(data, pivot + 1, right);
+		}
+	}
+	/**
+	 *  char pivot = data[right];
+        int i = left -1 ;
+        char temp;
+        for(int j= left; j < right ; j++){
+            if (data[j] <= pivot){
+            i++;
+            temp = data [j];
+            data[j]=data[ i];
+            data[i]=temp;
+            }
+        }
+        temp=data[right];
+        data[right] = data[i+1];
+        data[i+1] = temp;
+        return i+1;
+        }
+	 * @param data
+	 * @param left
+	 * @param right
+	 */
+	private void partition(E[] data, int left, int right){
+		int i = left - 1;
+		E privot = data[right];
+		E temp ;
+		for(int j = left; j < right ;j++){
+			if(data[j].compareTo(privot) <= 0){
+				i++;
+				temp = data[j];
+				data[j] = data[i];
+				data[i] = temp;
+			}
+		}
+		temp = data[right];
+		data[right] = data[i + 1];
+		data[i + 1] = temp ;
+		return i + 1;
+			}
+		}
+	}
+
+}

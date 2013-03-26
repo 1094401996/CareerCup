@@ -1,0 +1,23 @@
+package sortingAlgorithms;
+
+public class QuickSort<E extends Comparable<E>> {
+	private E[] data;
+	
+	public void sort(E[] e){
+		this.data = e;
+		quicksort(data, 0 , data.length - 1);
+	}
+	
+	private void quicksort(E[] data, int left, int right){
+		if(right > left){
+			partition(data,left, right);
+			int pivot = (left + right) / 2;
+			quicksort(data, left, middle - 1);
+			quicksort(data, middle + 1, right);
+		}
+	}
+	private void partition(E[] data, int left, int right){
+		
+	}
+
+}
