@@ -1,0 +1,23 @@
+import java.util.*;
+public class AtosTest
+{
+ public static void main(String[] args)
+ {
+  String[] alstr=null;
+  ArrayList al = new ArrayList();
+  al.add("A");
+  al.add("B");
+  al.add("C");
+  al.add("D");
+  alstr=(String[])al.toArray();
+  if(alstr.length>0)
+  {
+   for(int i=0;i<alstr.length;i++)
+    System.out.println("# "+alstr[i]);
+  }
+  else
+  {
+   System.out.println("ArrayList to String[] failure!");
+  }
+ }
+}

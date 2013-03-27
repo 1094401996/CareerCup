@@ -97,7 +97,10 @@ public class BinaryTree {
 		node.setRight(reConstruct(preorder,inorder,left + 1 + i, right,index + 1));
 		return node;
 	}
-
+	
+	class WrapInt{
+		public int value = Integer.MIN_VALUE;
+	 }
 	
 	
 	
@@ -327,28 +330,6 @@ public class BinaryTree {
    		return true;
    		
    	}
-	
-	class WrapInt{
-		public int value = Integer.MIN_VALUE;
-	 }
-	
-	//method 2
-	 public boolean isBST2(){
-	       	return isBST2(root ,Integer.MIN_VALUE,Integer.MAX_VALUE);
-	       }
-	       
-	       boolean isBST2(Node x, int min, int max){
-	       	if(x == null){
-	       		return true;
-	       	}
-	       	if(x.getElement() <= min || x.getElement() > max){
-	       		return false;
-	       	}
-	       	if(!isBST2(x.getLeft(), min , x.getElement()) || !isBST2(x.getRight(), x.getElement(), max)){
-	       		return false;
-	       	}
-	       	return true;
-	       }
    	//this is wrong because the node should bigger than all nodes in its left subtree, not just 
    	// the left child node....sigh
 //   	//T(n) = 2T(n/2) + O(1)    ===> T(n) = O(logN )
@@ -368,8 +349,24 @@ public class BinaryTree {
 //   			return toLeft && toRight && isBST(x.getLeft()) && isBST(x.getRight());
 //   		}
 //   	}
+   	//the method only works if the tree is the BST
    	
-      
+       public boolean isBST2(){
+       	return isBST2(root ,Integer.MIN_VALUE,Integer.MAX_VALUE);
+       }
+       
+       boolean isBST2(Node x, int min, int max){
+       	if(x == null){
+       		return true;
+       	}
+       	if(x.getElement() <= min || x.getElement() > max){
+       		return false;
+       	}
+       	if(!isBST2(x.getLeft(), min , x.getElement()) || !isBST2(x.getRight(), x.getElement(), max)){
+       		return false;
+       	}
+       	return true;
+       }
     
     
     
