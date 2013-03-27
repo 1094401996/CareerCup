@@ -1,0 +1,19 @@
+package fourdot5;
+/*Implement a function to check if a binary tree is a binary searchtree.
+ * 好吧，自己写出递归的感觉还是不错的。。。。不过似乎方法恶心了点。。。下周再优化一下。。。
+ * */
+
+import binarytree.BinaryTree;
+
+public class IsBST {
+	public static void main(String[] args){
+		//reconstruct a binary tree....
+		int [] pre = {7,10,4,3,1,2,8,11};
+		int [] in = {4,10,3,1,7,11,8,2};
+		BinaryTree bt = new BinaryTree();
+		bt.reConstruct(pre, in);
+		System.out.println(bt.isBST());
+		
+	}
+
+}

@@ -3,10 +3,12 @@
 <fullyQualifiedTypeName name="java.lang.Math"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="binarytree.Node"/>
-<fullyQualifiedTypeName name="binarytree.BinaryTree"/>
 <fullyQualifiedTypeName name="java.util.Queue"/>
 <fullyQualifiedTypeName name="java.util.Stack"/>
 <fullyQualifiedTypeName name="Graph.Digraph"/>
 <fullyQualifiedTypeName name="Graph.DirectedDFS"/>
 <fullyQualifiedTypeName name="java.util.LinkedList"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="sortingAlgorithms.QuickSort"/>
+<fullyQualifiedTypeName name="binarytree.BinaryTree"/>
 </qualifiedTypeNameHistroy>

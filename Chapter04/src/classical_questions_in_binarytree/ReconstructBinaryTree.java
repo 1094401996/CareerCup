@@ -7,7 +7,18 @@ import binarytree.BinaryTree;
  * @author gengchen
  * 自己写出的程序就是爽呀  ^_^
  * 根据一颗二叉树的preorder和inder重构这课树。。。。
+ *  不能有相同元素。。。。。
  *
+ *
+ *
+ *     ___7___
+       /     \
+    10        2
+   /   \      /
+  4    3      8
+        \    /
+         1  11
+ *		
  */
 public class ReconstructBinaryTree {
 	public static void main(String[] args){
@@ -20,6 +31,7 @@ public class ReconstructBinaryTree {
 		bt.inorder(bt.getRoot());
 		System.out.println();
 		bt.postorder(bt.getRoot());
+
 		
 
 		
