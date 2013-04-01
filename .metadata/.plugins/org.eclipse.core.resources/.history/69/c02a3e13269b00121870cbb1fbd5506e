@@ -1,0 +1,15 @@
+package fivedot8;
+
+public class DrawLine {
+	
+	
+	public static void drwaHorizontalLine(byte[] screen , int width, int x1, int x2, int y){
+		int size = screen.length;
+		int pixels = size * 8;
+		int height = pixels / width;
+		
+		
+	}
+	
+	
+}

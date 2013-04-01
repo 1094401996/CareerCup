@@ -1,0 +1,41 @@
+package fivedot7;
+
+import java.util.ArrayList;
+
+public class FindMissingNumber {
+	public static void main(String[] args){
+		
+	}
+	public  static  int findMissing(ArrayList<String> array){
+		int k = array.get(0).length();
+		return findMissing(array, k - 1);
+	}
+	
+	public static int findMissing(ArrayList<String> input, int i){
+		if(i < 0 ){
+			return 0;
+		}
+		
+		ArrayList<String> zeros = new ArrayList<String>();
+		ArrayList<String> ones = new ArrayList<String>();
+		
+		for(String integer : input){
+			if(integer.charAt(i) == '0'){
+				zeros.add(integer);
+			}
+			else if(integer.charAt(0) == '1'){
+				zeros.add(integer);
+			}else{
+				System.out.println("wrong input");
+				System.exit(-1);
+			}
+		}
+		if(zeros.size() <= ones.size()){
+			int v = findMissing(zeros, i -1 );
+			return (v << 1) | 0;
+		}else{
+			int v = findMissing(ones,i -1 );
+			return  (v << 1 ) | 1;
+		}
+	}
+}

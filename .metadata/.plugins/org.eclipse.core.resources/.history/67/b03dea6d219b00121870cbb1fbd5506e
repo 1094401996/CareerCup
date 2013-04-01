@@ -1,0 +1,61 @@
+package fivedot7;
+
+import java.util.ArrayList;
+ 
+/**
+ * An array A[1...n] contains all the integers from 0 to n except for one number which is missing. 
+ * In this problem, we cannot access an entire integer in A with a single operation. 
+ * The elements of A are represented in binary, 
+ * and the only operation we can use to access them is "fetch the jth bit of A[i]", 
+ * which takes constant time. 
+ * Write code to find the missing integer.
+ *  
+ * Can you do it in O(n) time?
+ *
+ */
+public class MissingNumber {
+ 
+	public static int missingNumber(ArrayList<String> A){
+		int k = A.get(0).length();	//count of bits
+		
+		return missingNumber(A, k-1);
+	}
+	
+	public static int missingNumber(ArrayList<String> A, int k){
+		if (k < 0)
+			return 0;
+		
+		ArrayList<String> zero = new ArrayList<String>();
+		ArrayList<String> one = new ArrayList<String>();
+		
+		for (String integer : A) {
+			if (integer.charAt(k) == '0')
+				zero.add(integer);
+			else if (integer.charAt(k) == '1')
+				one.add(integer);
+			else {
+				System.out.println("Invalid input");
+				System.exit(1);
+			}	
+		}
+		
+		if (zero.size() <= one.size())			//missing 0
+			return (missingNumber(zero, k-1)) << 1 | 0; 
+		else 						//missing 1
+			return (missingNumber(one, k-1)) << 1 | 1;
+	}
+ 
+	public static void main(String[] args) {
+		ArrayList<String> A = new ArrayList<String>();
+		A.add("000");
+		A.add("010");
+		A.add("001");
+		A.add("100");
+		A.add("101");
+		A.add("111");
+		A.add("110");
+		
+		int m = missingNumber(A);
+		System.out.println(m);
+	}
+}
