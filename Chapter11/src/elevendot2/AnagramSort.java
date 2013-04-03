@@ -1,6 +1,6 @@
 package elevendot2;
 
-import sortingAlgorithms.QuickSort;
+import sortingAlgorithms.Quicksort;
 
 /**
  * CareerCup11.2
@@ -25,7 +25,7 @@ public class AnagramSort {
 		for(int i = 0 ; i < str.length; i ++){
 			ss[i] = new SignitureString(str[i]);
 		}
-		QuickSort<SignitureString> qs = new QuickSort<SignitureString>();
+		Quicksort<SignitureString> qs = new Quicksort<SignitureString>();
 		qs.sort(ss);
 		for(SignitureString sig : ss){
 			System.out.print(sig.getStr() + " ");

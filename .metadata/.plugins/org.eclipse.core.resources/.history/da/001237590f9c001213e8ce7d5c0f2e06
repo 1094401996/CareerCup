@@ -1,0 +1,18 @@
+/**
+ * CareerCup 11.6
+ * Given a matrix in which each row and each column is sorted, write a method to find an 
+ * element in it.
+ * 
+ * assumption : each row and column is in increasing order
+ * 
+ * method: 
+ * if the start of column is greater than the element, then x is to the left of the column
+ * if the end of column  is less than the element , then x is to the right of the column
+ * if the start of the row is greater than the element, the x is above the row
+ * if the end of the row is less than the element , then x is below the row
+ */
+package elevendot6;
+
+public class FindElementInSoredMatrix {
+
+}

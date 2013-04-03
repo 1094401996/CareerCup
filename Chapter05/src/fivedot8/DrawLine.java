@@ -5,6 +5,8 @@
  * to be stored in one byte. The screen has width w, where w is divisible can be derived from
  *  the length of the array and the width. Implement a function drawHorizontalLine(byte[] screen
  *  , int width, int x1, int x2, int y) which draws a horizontal line from (x1,y) to (x2,y).
+ *  
+ *  method: 自己题目理解错误。。。看答案的， 自己智力已经无解了。。。
  */
 package fivedot8;
 

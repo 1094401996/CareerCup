@@ -1,0 +1,40 @@
+package elevendot5;
+
+public class FindString {
+	public static void main(String[]args){
+		
+		String[] strs={"at","","","","","ball","","","car","cat","","dad","",""};
+		String target = "ball";
+		System.out.println(findString(strs,target,0,strs.length - 1));
+	}
+	
+	public static int findString(String[] strs, String target,int left, int right){
+		if(right >= left){
+			int mid = (left + right)/2;
+			if(strs[mid].compareTo(target) == 0){
+				return mid ;
+			}
+			int i = mid;
+			int j = mid;
+			if(strs[mid].equals("")){
+				//see the right
+				while(i <= right && strs[mid].equals("")){
+					i++;
+				}
+				while(i >= left && strs[mid].equals("")){
+					j--;
+				}
+			}
+			if(i > right && j <left){
+				return -1;
+			}
+			if(i <= right && strs[i].compareTo(target) <=0){
+				return findString(strs,target,i,right);
+			}
+			if(j >= left && strs[j].compareTo(target) >= 0){
+				return findString(strs,target,left, j);
+			}
+		}
+		return -1;
+	}
+}

@@ -2,7 +2,7 @@ package elevendot2;
 
 import java.util.Collections;
 
-import sortingAlgorithms.QuickSort;
+import sortingAlgorithms.Quicksort;
 
 public class SignitureString implements Comparable<SignitureString> {
 	private StringBuffer str;
@@ -28,7 +28,7 @@ public class SignitureString implements Comparable<SignitureString> {
 		for(int i = 0 ; i < arr.length; i++){
 			arr[i] = new Character(str.charAt(i));
 		}
-		QuickSort<Character> qs = new QuickSort<Character>();
+		Quicksort<Character> qs = new Quicksort<Character>();
 		qs.sort(arr);
 		for(int i = 0; i < arr.length; i++){
 			str.setCharAt(i, arr[i]);

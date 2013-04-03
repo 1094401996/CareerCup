@@ -1,6 +1,6 @@
 package sortingAlgorithms;
 
-public class QuickSort<E extends Comparable<E>> {
+public class Quicksort<E extends Comparable<E>> {
 	private E[] data;
 	
 	public void sort(E[] e){
