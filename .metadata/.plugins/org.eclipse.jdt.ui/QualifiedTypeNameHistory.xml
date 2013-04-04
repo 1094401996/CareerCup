@@ -7,8 +7,9 @@
 <fullyQualifiedTypeName name="Graph.Digraph"/>
 <fullyQualifiedTypeName name="Graph.DirectedDFS"/>
 <fullyQualifiedTypeName name="java.util.LinkedList"/>
-<fullyQualifiedTypeName name="java.util.Collections"/>
 <fullyQualifiedTypeName name="sortingAlgorithms.QuickSort"/>
 <fullyQualifiedTypeName name="binarytree.BinaryTree"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>
