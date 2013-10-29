@@ -8,7 +8,7 @@
  *  Example: find "ballcar" in ["at", "", "", "", "", "ball", "car", "", "", "dad", "", ""] 
  *  will return -1
  */
-
+//you bug，这种方法不对
 package elevendot5;
 
 public class FindString {
